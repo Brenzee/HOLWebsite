@@ -13,10 +13,12 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
+  <form name="reservation" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" id="name" name="name" placeholder="Rozevelts" />
+    <input type="text" id="date" name="date" placeholder="DD/MM/GGGG" />
+    <input type="text" id="time" name="time" placeholder="SS:MM" />
+    <input type="number" id="count" name="count" placeholder="2" />
+    <input type="text" id="phone" name="phone" placeholder="+371 ********" />
   </form>
   <div id="root"></div>
 

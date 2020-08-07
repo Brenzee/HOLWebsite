@@ -3,7 +3,6 @@ import "./Reservation.css";
 
 class Reservation extends Component {
   submitButton(e) {
-    e.preventDefault();
     alert("Jūsu rezervācija ir pieņemta!");
   }
 

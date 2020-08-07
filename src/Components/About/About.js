@@ -46,6 +46,7 @@ const About = () => {
             href="https://www.facebook.com/houseoflightgrilbars/"
             target="_blank"
             className="facebook_link"
+            rel="noopener noreferrer"
           >
             {" "}
             Facebook
@@ -54,6 +55,7 @@ const About = () => {
           <a
             href="https://www.instagram.com/houseoflightgrilbars/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             {" "}
             Instagram

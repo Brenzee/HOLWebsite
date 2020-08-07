@@ -4,6 +4,10 @@
     padding: 0 3rem;
 }
 
+.hol_color {
+    color: #3ABADF;
+}
+
 /* Katrs Grida Elements */
 .about>div {
     border: 1px gray solid;
@@ -17,6 +21,7 @@
 .about_text {
     padding: 2rem;
 }
+
 
 .about_items {
     display: flex;
@@ -78,8 +83,16 @@
         padding: 0;
     }
 
+    .brunch h1 {
+        font-size: 28px;
+    }
+
     .about_item {
-        grid-template-columns: 15% auto;
+        grid-template-columns: 20% auto;
+    }
+
+    .item_text {
+        font-size: 16px;
     }
 
     .about_item i {

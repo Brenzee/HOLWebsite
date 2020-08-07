@@ -6,7 +6,8 @@ const About = () => {
     <div className="about grid">
       <div className="about_text" id="about">
         <h1 className="about_title">
-          Laipni lūgti House of Light – mājīgā restorānā pašā Jūrmalas sirdī!
+          Laipni lūgti <span className="hol_color">House of Light</span> –
+          mājīgā restorānā pašā Jūrmalas sirdī!
         </h1>
         <div className="about_items">
           <div className="about_item">

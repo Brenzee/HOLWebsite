@@ -103,6 +103,10 @@
 /* MEDIA QUERIES  */
 
 @media only screen and (max-width: 600px) {
+    .background {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/About_picture.JPG);
+    }
+
     .logo {
         margin-left: -1rem;
     }

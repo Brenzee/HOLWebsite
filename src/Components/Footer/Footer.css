@@ -1,5 +1,5 @@
 .footer {
-    height: 25vh;
+    height: 30vh;
     background: #3ABADF;
     display: flex;
     justify-content: space-around;
@@ -35,6 +35,10 @@
     text-decoration: underline;
 }
 
+.working_title {
+    color: #3ABADF;
+    z-index: 2;
+}
 
 .working_hours {
     display: flex;
@@ -57,12 +61,16 @@
     font-size: 12px;
 }
 
+
 @media only screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
-        height: 45vh;
+        height: 65vh;
     }
 
+    .contact {
+        margin-top: 2rem;
+    }
 
     .contact_item i {
         font-size: 24px;
@@ -84,6 +92,7 @@
 
     .working_title {
         font-size: 16px;
+        color: white;
     }
 
     .day {

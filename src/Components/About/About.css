@@ -23,7 +23,6 @@
     padding: 2rem;
 }
 
-
 .about_items {
     display: flex;
     flex-direction: column;
@@ -61,22 +60,14 @@
     font-weight: 500;
 }
 
-.brunch_about {
-    padding-top: 2rem;
+div .hol_picture {
+    background: url(../../img/About.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
 }
 
-.brunch {
-    background: rgba(255, 0, 0, 0.151);
-}
-
-.brunch_about a {
-    text-decoration: none;
-    color: #DD2A7B;
-}
-
-.brunch_about .facebook_link {
-    color: #4063AD;
-}
 
 @media only screen and (max-width: 600px) {
     .about {
@@ -85,10 +76,6 @@
         padding: 0;
     }
 
-    /* Brunča Virsraksts */
-    .brunch h1 {
-        font-size: 28px;
-    }
 
     /* House of Light Texta sadalījums ar iconam */
     .about_item {
@@ -108,4 +95,8 @@
         margin: 2rem;
     }
 
+    div .hol_picture {
+        min-width: 80%;
+        height: 30vh;
+    }
 }

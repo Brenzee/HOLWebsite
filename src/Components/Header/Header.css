@@ -143,6 +143,7 @@
     /* Nav List */
     .nav_list {
         position: absolute;
+        overflow: hidden;
         top: 0;
         left: -100%;
         flex-direction: column;

@@ -1,0 +1,21 @@
+.white_wave_bottom {
+    background: #3ABADF;
+    height: 10vh;
+}
+
+.picture {
+    background: url(../../img/WhiteWave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -1px;
+    height: 25vh;
+    width: 100%;
+    transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .picture {
+        background-position: center;
+    }
+}

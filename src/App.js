@@ -6,6 +6,8 @@ import About from "./Components/About/About";
 import Keiterings from "./Components/Keiterings/Keiterings";
 import Footer from "./Components/Footer/Footer";
 import Reservation from "./Components/Reservation/Reservation";
+import Brunch from "./Components/Brunch/Brunch";
+import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 
 const App = () => {
   return (
@@ -13,8 +15,10 @@ const App = () => {
       <Header />
       <WhiteWave />
       <About />
+      <Brunch />
       <Keiterings />
       <Reservation />
+      <WhiteWaveBottom />
       <Footer />
     </div>
   );

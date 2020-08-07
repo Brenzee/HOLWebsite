@@ -66,3 +66,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+1.Banketu piedāvājums
+
+2.Nomainīt Brancha bildi
+
+3.Apakšā vilnītis
+
+4.Bilde blakus laipni lūgti, Branchu apakšā
+
+5.Nevajag Konditoreju

@@ -6,22 +6,9 @@ const Keiterings = () => {
     <div className="keiterings">
       <h1 className="main_title">Keiterings</h1>
       <div className="keiterings_grid">
-        <div className="konditoreja">
-          <img src={require("../../img/bakery.jpg")} alt="" width="100%" />
-          <div className="keiterings_title">Konditoreja</div>
-          <div className="keiterings_about">
-            Brīnumi piepildās… House of Light piepildīs arī Jūsu brīnumgardos
-            sapņus tortes formā. Piedāvājam Jums pasūtīt dažāda veida tortes
-            lielākiem un mazākiem pasākumiem. Vai nebūtu jauki Jūsu rīkotajā
-            pasākumā vai ballē našķoties ar patiesi LIELU torti, uz kuras būtu
-            attēlots Jūsu kompānijas logo?! Ieskaties mūsu paveiktajos
-            garadarbos un smelies idejas savai TORTEI. Mūsu atsaucīgā komanda
-            realizēs Jūsu vēlmes par gardo svētku torti!
-          </div>
-        </div>
         <div className="party">
           <img src={require("../../img/party.jpg")} alt="" width="100%" />
-          <div className="keiterings_title">Korporatīvās ballītes</div>
+          <div className="keiterings_title">Banketu piedāvājums</div>
           <div className="keiterings_about">
             Restorāns – grilbārs “House of Light” piedāvā Jūsu pasākumu padarīt
             par īstu garšas baudījuma balli. Mūsu pavāru komanda apmierinās

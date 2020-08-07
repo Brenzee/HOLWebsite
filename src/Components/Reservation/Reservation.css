@@ -2,6 +2,7 @@
 
 .reserve {
     padding: 2rem;
+    margin: 3rem 15rem;
 }
 
 .reserve form {
@@ -65,6 +66,10 @@
 @media only screen and (max-width: 600px) {
     .reserve form input {
         width: 50%;
+    }
+
+    .reserve {
+        margin: 0;
     }
 
     .reserve button {

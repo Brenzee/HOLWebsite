@@ -49,6 +49,7 @@
 
     .keiterings_title {
         padding-bottom: 2rem !important;
+        border-bottom: 2px solid #3ABADF !important;
     }
 
     .keiterings h1 {
@@ -56,12 +57,19 @@
     }
 
     .keiterings_grid div {
-        margin: 2rem;
+        margin: 0;
+        border: none;
+        box-shadow: none;
     }
 
     .keiterings_grid>div>div {
-        padding: 0.5rem;
+        padding: 3rem;
+
     }
 
+
+    .keiterings_grid img {
+        border-radius: 0;
+    }
 
 }

@@ -83,16 +83,19 @@
         padding: 0;
     }
 
+    /* Brunča Virsraksts */
     .brunch h1 {
         font-size: 28px;
     }
 
+    /* House of Light Texta sadalījums ar iconam */
     .about_item {
         grid-template-columns: 20% auto;
     }
 
+    /* HOL teksta size */
     .item_text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .about_item i {

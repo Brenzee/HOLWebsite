@@ -1,0 +1,58 @@
+.footer {
+    height: 25vh;
+    background: #3ABADF;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+}
+
+.contact_item i {
+    color: white;
+    font-size: 36px;
+}
+
+.contact_item a,
+.phone {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact_item a:hover {
+    text-decoration: underline;
+}
+
+
+.working_hours {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.day h4 {
+    padding-left: 1rem;
+}
+
+.rights {
+    font-size: 12px;
+}

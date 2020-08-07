@@ -1,0 +1,10 @@
+.white_wave {
+    background: url(../../img/WhiteWave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    left: 0px;
+    top: 80vh;
+}

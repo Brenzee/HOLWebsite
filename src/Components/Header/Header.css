@@ -1,0 +1,182 @@
+/* AIZMUGURES BILDE AR GRADIENT */
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/Background.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+/* VISS HEADERIS */
+.header {
+    display: flex;
+    padding: 2rem 3rem;
+    padding-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+/* LOGO */
+.logo {
+    margin: 3rem 0;
+}
+
+.logo img {
+    height: 150px;
+}
+
+/* VISS PAR NAV */
+.nav_list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav_item {
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+
+}
+
+.nav_item a:hover {
+    background: #3ABADF;
+    color: black;
+}
+
+/* NAV BEIGAS */
+
+/* HERO VIDUS */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 84px;
+}
+
+.hero h2 {
+    font-size: 48px;
+}
+
+.hero a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 1.5rem 3rem;
+    background-color: #3ABADF;
+    margin-top: 2rem;
+    border-radius: 25px;
+    font-size: 24px;
+    transition: all 0.1s ease-out;
+}
+
+.hero a:hover {
+    background: white;
+    color: #3ABADF;
+}
+
+.burger {
+    display: none;
+}
+
+.exit {
+    display: none;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: -1rem;
+    }
+
+    .logo img {
+        height: 140px;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        padding-bottom: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 36px
+    }
+
+    .hero a {
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+
+
+    /* Nav List */
+    .nav_list {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: rgba(0, 0, 0, 0.76);
+        height: 100vh;
+        width: 100%;
+        padding: 2rem 0;
+        z-index: 5;
+        transition: all 0.5s ease-out;
+    }
+
+    .nav_list_active {
+        left: 0;
+    }
+
+    .nav_list li {
+        font-size: 24px;
+        padding: 10px 0;
+    }
+
+    /* Viss Par Nav Burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 36px;
+    }
+
+    .exit {
+        color: white;
+        cursor: pointer;
+        font-size: 36px;
+        display: none;
+        z-index: 6;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Beigas par Nav Burger */
+}

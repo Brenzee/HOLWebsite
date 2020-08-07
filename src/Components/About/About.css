@@ -1,0 +1,72 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3rem;
+}
+
+/* Katrs Grida Elements */
+.about>div {
+    border: 1px gray solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px gray;
+    margin: 1rem 5rem;
+}
+
+
+/* Laipni lūgti HOL */
+.about_text {
+    padding: 2rem;
+}
+
+.about_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+
+.about_text h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #3ABADF;
+    padding-bottom: 1rem;
+}
+
+.about_item {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+.about_item i {
+    color: #3ABADF;
+    font-size: 32px;
+    padding: 5px
+}
+
+.about_item:first-of-type {
+    padding-top: 2rem;
+}
+
+.item_text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.brunch_about {
+    padding-top: 2rem;
+}
+
+.brunch {
+    background: rgba(255, 0, 0, 0.151);
+}
+
+.brunch_about a {
+    text-decoration: none;
+    color: #DD2A7B;
+}
+
+.brunch_about .facebook_link {
+    color: #4063AD;
+}

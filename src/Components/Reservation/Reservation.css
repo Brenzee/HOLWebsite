@@ -1,0 +1,62 @@
+/* Reserve */
+
+.reserve {
+    padding: 2rem;
+}
+
+.reserve form {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reserve h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #3ABADF;
+}
+
+.reserve form label {
+    padding-bottom: 5px;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.reserve form input {
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    padding: 5px 0;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    transition: all 0.5s ease-in-out;
+    width: 30%;
+}
+
+.reserve form input:focus {
+    outline: none;
+    border-bottom: 1px solid #3ABADF;
+    width: 100%;
+}
+
+.reserve button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 0.5rem;
+    font-weight: 600;
+    background: #3ABADF;
+    border-radius: 25px;
+    transition: all 0.2s ease-in;
+}
+
+.reserve button:focus {
+    outline: none;
+}
+
+.reserve button:hover {
+    background: whitesmoke;
+    color: #3ABADF;
+}

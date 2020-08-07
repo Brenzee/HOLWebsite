@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import "./Reservation.css";
 
 class Reservation extends Component {
-  submitButton(e) {
-    alert("Jūsu rezervācija ir pieņemta!");
-  }
+  submitButton(e) {}
 
   render() {
     return (
@@ -19,7 +17,7 @@ class Reservation extends Component {
           <label htmlFor="date">Datums</label>
           <input type="text" id="date" name="date" placeholder="DD/MM/GGGG" />
           <label htmlFor="time">Laiks</label>
-          <input type="text" id="time" name="time" placeholder="SS:MM" />
+          <input type="text" id="time" name="time" placeholder="**:**" />
           <label htmlFor="count">Viesu skaits</label>
           <input type="number" id="count" name="count" placeholder="2" />
           <label htmlFor="phone">Telefona Numurs</label>

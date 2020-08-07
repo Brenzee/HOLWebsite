@@ -70,3 +70,17 @@
 .brunch_about .facebook_link {
     color: #4063AD;
 }
+
+@media only screen and (max-width: 600px) {
+    .about {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about>div {
+        margin: 0;
+        margin: 1rem;
+    }
+
+}

@@ -38,3 +38,29 @@
     font-size: 14px;
     line-height: 24px;
 }
+
+@media only screen and (max-width: 600px) {
+    .keiterings_grid {
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .keiterings_title {
+        padding-bottom: 2rem !important;
+    }
+
+    .keiterings h1 {
+        margin-top: 5rem;
+    }
+
+    .keiterings_grid div {
+        margin: 2rem;
+    }
+
+    .keiterings_grid>div>div {
+        padding: 0.5rem;
+    }
+
+
+}

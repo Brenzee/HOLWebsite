@@ -56,3 +56,37 @@
 .rights {
     font-size: 12px;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        height: 45vh;
+    }
+
+
+    .contact_item i {
+        font-size: 24px;
+    }
+
+    .contact_item a,
+    .phone {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .working_hours {
+        margin-top: 1rem;
+    }
+
+    .working_hours>div {
+        padding: 0.5rem 0;
+    }
+
+    .working_title {
+        font-size: 16px;
+    }
+
+    .day {
+        margin-bottom: 2rem;
+    }
+}

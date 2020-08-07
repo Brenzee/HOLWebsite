@@ -12,7 +12,8 @@ class Reservation extends Component {
         <div className="reserve_title">
           <h1>Rezervēt</h1>
         </div>
-        <form name="reservation" method="POST" action="" netlify>
+        <form name="reservation" method="POST" action="">
+          <input type="hidden" name="form-name" value="reservation" />
           <label htmlFor="name">Vārds</label>
           <input type="text" id="name" name="name" placeholder="Rozevelts" />
           <label htmlFor="date">Datums</label>

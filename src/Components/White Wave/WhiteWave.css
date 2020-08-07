@@ -8,3 +8,9 @@
     left: 0px;
     top: 80vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .white_wave {
+        top: 70vh;
+    }
+}

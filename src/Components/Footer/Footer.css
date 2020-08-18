@@ -1,15 +1,16 @@
 .footer {
-    height: 30vh;
+    height: 50vh;
     background: #3ABADF;
     display: flex;
     justify-content: space-around;
-    padding: 2rem 4rem;
+    padding: 5rem 4rem;
+    padding-top: 10rem;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact_item {
@@ -36,7 +37,7 @@
 }
 
 .working_title {
-    color: #3ABADF;
+    color: white;
     z-index: 2;
 }
 

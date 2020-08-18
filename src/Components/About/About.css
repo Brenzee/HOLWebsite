@@ -10,9 +10,7 @@
 
 /* Katrs Grida Elements */
 .about>div {
-    border: 1px gray solid;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px gray;
     margin: 1rem 5rem;
     z-index: 10;
 }
@@ -68,6 +66,10 @@ div .hol_picture {
     border: none;
 }
 
+.brunch {
+    border: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     .about {
@@ -75,6 +77,10 @@ div .hol_picture {
         margin: 0;
         padding: 0;
         background: linear-gradient(white, rgba(128, 128, 128, 0.308))
+    }
+
+    #about {
+        padding: 0;
     }
 
 

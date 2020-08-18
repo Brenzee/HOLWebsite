@@ -3,11 +3,13 @@ import "./Keiterings.css";
 
 const Keiterings = () => {
   return (
-    <div className="keiterings">
+    <div className="keiterings" id="keiterings">
       <h1 className="main_title">Keiterings</h1>
       <div className="keiterings_grid">
         <div className="party">
-          <img src={require("../../img/party.jpg")} alt="" width="100%" />
+          <img src={require("../../img/party.jpg")} alt="" width="95%" />
+        </div>
+        <div className="keitering_about">
           <div className="keiterings_title">Banketu piedāvājums</div>
           <div className="keiterings_about">
             Restorāns – grilbārs “House of Light” piedāvā Jūsu pasākumu padarīt

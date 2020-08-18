@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { Component } from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 class Header extends Component {
   constructor() {
@@ -31,29 +32,24 @@ class Header extends Component {
               }
             >
               <li className="nav_item">
-                <a href="/#" onClick={this.onClick}>
-                  Par mums
-                </a>
+                <ScrollIntoView selector="#about">
+                  <button onClick={this.onClick}>Par mums</button>
+                </ScrollIntoView>
               </li>
               <li className="nav_item">
-                <a href="/#" onClick={this.onClick}>
-                  Ēdienkarte
-                </a>
+                <ScrollIntoView selector="#brunch">
+                  <button onClick={this.onClick}>Brančš</button>
+                </ScrollIntoView>
               </li>
               <li className="nav_item">
-                <a href="/#" onClick={this.onClick}>
-                  Brančs
-                </a>
+                <ScrollIntoView selector="#keiterings">
+                  <button onClick={this.onClick}>Keiterings</button>
+                </ScrollIntoView>
               </li>
               <li className="nav_item">
-                <a href="/#" onClick={this.onClick}>
-                  Keiterings
-                </a>
-              </li>
-              <li className="nav_item">
-                <a href="/#" onClick={this.onClick}>
-                  Kontakti
-                </a>
+                <ScrollIntoView selector="#footer">
+                  <button onClick={this.onClick}>Kontakti</button>
+                </ScrollIntoView>
               </li>
             </ul>
             <div
@@ -72,7 +68,9 @@ class Header extends Component {
           <div className="hero">
             <h1>Sveicināti</h1>
             <h2>House of Light</h2>
-            <a href="/reserve">Rezervēt Galdiņu</a>
+            <ScrollIntoView selector="#reserve">
+              <button>Rezervēt galdiņu</button>
+            </ScrollIntoView>
           </div>
         </div>
       </div>

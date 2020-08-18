@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="contact">
         <div className="contact_item">
           <i className="fas fa-map-marker-alt"></i>

@@ -5,6 +5,12 @@
     margin: 3rem 15rem;
 }
 
+.reserve_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .reserve form {
     padding-top: 1rem;
     display: flex;
@@ -46,13 +52,14 @@
     cursor: pointer;
     border: none;
     color: white;
-    width: 100%;
-    font-size: 18px;
-    padding: 0.5rem;
+    width: 40%;
+    font-size: 24px;
+    padding: 1rem;
     font-weight: 600;
     background: #3ABADF;
     border-radius: 25px;
     transition: all 0.2s ease-in;
+    align-self: center;
 }
 
 .reserve button:focus {

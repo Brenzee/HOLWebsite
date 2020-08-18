@@ -39,17 +39,19 @@
     padding: 0.5rem;
 }
 
-.nav_item a {
+.nav_item button {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 15px;
     transition: all 0.2s ease;
-
+    background: none;
+    border: none;
 }
 
-.nav_item a:hover {
+.nav_item button:hover {
     background: #3ABADF;
     color: black;
 }
@@ -74,7 +76,7 @@
     font-size: 48px;
 }
 
-.hero a {
+.hero button {
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -84,9 +86,10 @@
     border-radius: 25px;
     font-size: 24px;
     transition: all 0.1s ease-out;
+    border: none;
 }
 
-.hero a:hover {
+.hero button:hover {
     background: white;
     color: #3ABADF;
 }

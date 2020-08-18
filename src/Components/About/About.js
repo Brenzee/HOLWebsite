@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about grid">
+    <div className="about grid" id="about">
       <div className="about_text" id="about">
         <h1 className="about_title">
           Laipni lūgti <span className="hol_color">House of Light</span> –

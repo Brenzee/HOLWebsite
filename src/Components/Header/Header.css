@@ -56,6 +56,11 @@
     color: black;
 }
 
+.nav_item button:focus {
+    border: none;
+    outline: none;
+}
+
 /* NAV BEIGAS */
 
 /* HERO VIDUS */
@@ -92,6 +97,11 @@
 .hero button:hover {
     background: white;
     color: #3ABADF;
+}
+
+.hero button:focus {
+    border: none;
+    outline: none;
 }
 
 .burger {

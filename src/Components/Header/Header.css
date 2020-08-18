@@ -1,4 +1,8 @@
 /* AIZMUGURES BILDE AR GRADIENT */
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 .background {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/Background.JPG);
     background-repeat: no-repeat;

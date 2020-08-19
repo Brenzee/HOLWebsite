@@ -18,7 +18,7 @@
 
 /* Laipni lūgti HOL */
 .about_text {
-    padding: 2rem;
+    padding: 2rem 0rem;
 }
 
 .about_items {
@@ -30,7 +30,7 @@
 
 
 .about_text h1 {
-    font-size: 24px;
+    font-size: 32px;
     border-bottom: 2px solid #3ABADF;
     padding-bottom: 1rem;
 }

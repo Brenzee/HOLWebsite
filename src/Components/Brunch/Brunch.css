@@ -7,7 +7,7 @@
 }
 
 .brunch_about a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #DD2A7B;
 }
 

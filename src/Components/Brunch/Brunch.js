@@ -9,14 +9,13 @@ const Brunch = () => {
         Sakarā ar to, ka pašreizējie ierobežojumi nedod mums iespēju nodrošināt
         pilnvērtīgus Brančus, rūpējoties gan par klientu, gan darbinieku
         veselību un drošību esam nolēmuši tos pagaidām atcelt. Par visām
-        izmaiņām saistībā ar Branču atsākšanos informēsim gan mūsu
+        izmaiņām saistībā ar Branču atsākšanos informēsim gan mūsu{" "}
         <a
           href="https://www.facebook.com/houseoflightgrilbars/"
           target="_blank"
           className="facebook_link"
           rel="noopener noreferrer"
         >
-          {" "}
           Facebook
         </a>
         , gan{" "}

@@ -53,6 +53,7 @@
     transition: all 0.2s ease;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .nav_item button:hover {
@@ -96,6 +97,7 @@
     font-size: 24px;
     transition: all 0.1s ease-out;
     border: none;
+    cursor: pointer;
 }
 
 .hero button:hover {
@@ -166,9 +168,9 @@
         flex-direction: column;
         justify-content: space-evenly;
         background: rgba(0, 0, 0, 0.86);
-        height: 100vh;
+        height: 105vh;
         width: 100%;
-        padding: 2rem 0;
+        margin-top: -2rem;
         padding-bottom: 10vh;
         z-index: 25;
         transition: all 0.5s ease-out;

@@ -13,7 +13,7 @@ class Reservation extends Component {
         <form name="reservation" method="POST" action="">
           <input type="hidden" name="form-name" value="reservation" />
           <label htmlFor="name">Vārds</label>
-          <input type="text" id="name" name="name" placeholder="Rozevelts" />
+          <input type="text" id="name" name="name" placeholder="Raitis" />
           <label htmlFor="date">Datums</label>
           <input type="text" id="date" name="date" placeholder="DD/MM/GGGG" />
           <label htmlFor="time">Laiks</label>

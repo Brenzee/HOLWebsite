@@ -75,14 +75,20 @@
 
 @media only screen and (max-width: 600px) {
     .reserve form input {
-        width: 50%;
+        width: 100%;
     }
 
     .reserve {
         margin: 0;
     }
 
+    .reserve h1 {
+
+        width: 100%;
+    }
+
     .reserve button {
+        width: 100%;
         padding: 1rem;
         font-size: 20px;
     }

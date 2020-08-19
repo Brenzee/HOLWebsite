@@ -64,6 +64,12 @@ div .hol_picture {
     background-position: center;
     background-size: cover;
     border: none;
+    transition: all 0.1s ease-in;
+}
+
+div .hol_picture:hover {
+    transform: rotate(2deg);
+    box-shadow: 0px 7px 5px gray;
 }
 
 .brunch {
@@ -91,7 +97,7 @@ div .hol_picture {
 
     /* HOL teksta size */
     .item_text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .about_item i {

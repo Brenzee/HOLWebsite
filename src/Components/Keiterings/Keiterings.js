@@ -4,7 +4,6 @@ import "./Keiterings.css";
 const Keiterings = () => {
   return (
     <div className="keiterings" id="keiterings">
-      <h1 className="main_title"></h1>
       <div className="keiterings_grid">
         <div className="party">
           <img src={require("../../img/Keiterings.jpg")} alt="" width="70%" />

@@ -1,75 +1,66 @@
-.main_title {
-    font-size: 48px;
-    text-align: center;
-    margin: 3rem;
-}
-
-.party {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.party img {
-    border-radius: 15px;
-}
-
-.keiterings_title {
-    font-size: 42px;
-    text-align: center;
-    border-bottom: 2px solid #3ABADF;
-    padding-bottom: 1rem;
-    font-weight: 600;
+.keiterings {
+  min-height: 100vh;
 }
 
 .keiterings_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem 4rem;
-    font-weight: 500;
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 1fr 1fr;
+  margin: 0rem 5rem;
+  padding: 1rem 2rem;
+  font-weight: 500;
 }
 
-.keiterings_grid>div {
-    border-radius: 25px;
-    margin: 1rem 6rem;
+.party {
+  background: url(../../img/Keiterings.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 25px;
+  margin: 1rem;
 }
 
-
-.keiterings_grid>div>div {
-    padding: 2rem;
+.main_title {
+  font-size: 48px;
+  text-align: center;
 }
 
-.keiterings_about {
-    font-size: 18px;
-    line-height: 36px;
+.keiterings_title {
+  font-size: 42px;
+  text-align: center;
+  border-bottom: 2px solid #3abadf;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.keitering_text {
+  margin: 0rem 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .keiterings_grid {
-        grid-template-columns: 1fr;
-        margin: 0;
-        padding: 0;
-    }
+  .keiterings_grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
 
-    .keiterings_title {
-        padding-bottom: 2rem !important;
-        border-bottom: 2px solid #3ABADF !important;
-    }
+  .keiterings_title {
+    padding-bottom: 2rem !important;
+    border-bottom: 2px solid #3abadf !important;
+  }
 
-    .keiterings h1 {
-        margin-top: 5rem;
-    }
+  .keiterings h1 {
+    margin-top: 5rem;
+  }
 
-    .keiterings_grid div {
-        margin: 0;
-        border: none;
-        box-shadow: none;
-    }
+  .keiterings_grid div {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
 
-    .keiterings_grid>div>div {
-        padding: 3rem;
-
-    }
-
-
+  .keiterings_grid > div > div {
+    padding: 3rem;
+  }
 }

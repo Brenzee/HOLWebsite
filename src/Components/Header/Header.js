@@ -32,6 +32,15 @@ class Header extends Component {
               }
             >
               <li className="nav_item">
+                <a
+                  href="https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Menu
+                </a>
+              </li>
+              <li className="nav_item">
                 <ScrollIntoView selector="#about">
                   <button onClick={this.onClick}>Par mums</button>
                 </ScrollIntoView>

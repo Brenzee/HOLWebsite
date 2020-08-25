@@ -15,17 +15,26 @@ class Reservation extends Component {
           <label htmlFor="name">Vārds</label>
           <input type="text" id="name" name="name" placeholder="Raitis" />
           <label htmlFor="date">Datums</label>
-          <input type="text" id="date" name="date" placeholder="DD/MM/GGGG" />
+          <input type="date" id="date" name="date" placeholder="DD/MM/GGGG" />
           <label htmlFor="time">Laiks</label>
-          <input type="text" id="time" name="time" placeholder="**:**" />
+          <input type="time" id="time" name="time" placeholder="**:**" />
           <label htmlFor="count">Viesu skaits</label>
-          <input type="number" id="count" name="count" placeholder="2" />
+          <input
+            type="number"
+            id="count"
+            name="count"
+            placeholder="2"
+            min="1"
+            max="15"
+          />
           <label htmlFor="phone">Telefona Numurs</label>
+          <input type="TEL" id="phone" name="phone" placeholder="+" />
+          <label htmlFor="comments">Komentāri</label>
           <input
             type="text"
-            id="phone"
-            name="phone"
-            placeholder="+371 ********"
+            id="comments"
+            name="comments"
+            placeholder="Nepieciešams bērnu krēsliņš utt."
           />
           <button type="submit" onClick={this.submitButton}>
             Rezervēt

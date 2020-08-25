@@ -1,95 +1,95 @@
 /* Reserve */
 
 .reserve {
-    padding: 2rem;
-    margin: 3rem 15rem;
+  min-height: 100vh;
+  padding: 2rem;
+  margin: 3rem 15rem;
 }
 
 .reserve_title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reserve form {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .reserve h1 {
-    text-align: center;
-    margin: 2rem 10rem;
-    padding-bottom: 2rem;
-    font-size: 42px;
-    width: 50%;
-    border-bottom: 2px solid #3ABADF;
+  text-align: center;
+  margin: 2rem 10rem;
+  padding-bottom: 2rem;
+  font-size: 42px;
+  width: 50%;
+  border-bottom: 2px solid #3abadf;
 }
 
 .reserve form label {
-    padding-bottom: 5px;
-    font-weight: 600;
-    padding-left: 1rem;
+  padding-bottom: 5px;
+  font-weight: 600;
+  padding-left: 1rem;
 }
 
 .reserve form input {
-    border: none;
-    border-bottom: 1px solid white;
-    font-size: 18px;
-    padding: 5px 0;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    transition: all 0.5s ease-in-out;
-    width: 30%;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 18px;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
 }
 
 .reserve form input:focus {
-    outline: none;
-    border-bottom: 1px solid #3ABADF;
-    width: 100%;
+  outline: none;
+  border-bottom: 1px solid #3abadf;
+  width: 100%;
 }
 
 .reserve button {
-    cursor: pointer;
-    border: none;
-    color: white;
-    width: 40%;
-    font-size: 24px;
-    padding: 1rem;
-    font-weight: 600;
-    background: #3ABADF;
-    border-radius: 25px;
-    transition: all 0.2s ease-in;
-    align-self: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+  width: 40%;
+  font-size: 24px;
+  padding: 1rem;
+  font-weight: 600;
+  background: #3abadf;
+  border-radius: 25px;
+  transition: all 0.2s ease-in;
+  align-self: center;
 }
 
 .reserve button:focus {
-    outline: none;
+  outline: none;
 }
 
 .reserve button:hover {
-    background: whitesmoke;
-    color: #3ABADF;
+  background: whitesmoke;
+  color: #3abadf;
 }
 
 @media only screen and (max-width: 600px) {
-    .reserve form input {
-        width: 100%;
-    }
+  .reserve form input {
+    width: 100%;
+  }
 
-    .reserve {
-        margin: 0;
-    }
+  .reserve {
+    margin: 0;
+  }
 
-    .reserve h1 {
+  .reserve h1 {
+    width: 100%;
+  }
 
-        width: 100%;
-    }
-
-    .reserve button {
-        width: 100%;
-        padding: 1rem;
-        font-size: 20px;
-    }
+  .reserve button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+  }
 }

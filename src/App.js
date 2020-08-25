@@ -8,11 +8,13 @@ import Footer from "./Components/Footer/Footer";
 import Reservation from "./Components/Reservation/Reservation";
 import Brunch from "./Components/Brunch/Brunch";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
+import SocialMedia from "./Components/SocialMedia/SocialMedia";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <SocialMedia />
       <WhiteWave />
       <About />
       <Brunch />

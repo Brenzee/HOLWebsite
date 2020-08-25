@@ -1,105 +1,103 @@
 .footer {
-    height: 50vh;
-    background: #3ABADF;
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem 4rem;
-    padding-top: 10rem;
+  height: 60vh;
+  background: #3abadf;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 4rem;
+  padding-top: 10rem;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .contact_item {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .contact_item i {
-    color: white;
-    font-size: 36px;
+  color: white;
+  font-size: 36px;
 }
 
 .contact_item a,
 .phone {
-    text-decoration: none;
-    color: white;
-    padding-left: 1rem;
-    font-weight: 500;
-    font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .contact_item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .working_title {
-    color: white;
-    z-index: 2;
+  color: white;
+  z-index: 2;
 }
 
 .working_hours {
-    display: flex;
-    color: white;
-    justify-content: space-around;
-    flex-direction: column;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .day {
-    display: flex;
-    color: white;
-    align-items: center;
+  display: flex;
+  color: white;
+  align-items: center;
 }
 
 .day h4 {
-    padding-left: 1rem;
-    font-size: 18px;
+  padding-left: 1rem;
+  font-size: 18px;
 }
 
 .rights {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .footer {
-        flex-direction: column;
-        height: 65vh;
-        padding-top: 2rem;
-    }
+  .footer {
+    flex-direction: column;
+    height: 65vh;
+    padding-top: 2rem;
+  }
 
-    .contact {
-        margin-top: 5rem;
-    }
+  .contact {
+    margin-top: 5rem;
+  }
 
-    .contact_item i {
-        font-size: 24px;
-    }
+  .contact_item i {
+    font-size: 24px;
+  }
 
-    .contact_item a,
-    .phone {
-        font-size: 14px;
-        padding: 1rem;
-    }
+  .contact_item a,
+  .phone {
+    font-size: 14px;
+    padding: 1rem;
+  }
 
-    .working_hours {
-        margin-top: 1rem;
-    }
+  .working_hours {
+    margin-top: 1rem;
+  }
 
-    .working_hours>div {
-        padding: 0.5rem 0;
-    }
+  .working_hours > div {
+    padding: 0.5rem 0;
+  }
 
-    .working_title {
-        font-size: 16px;
-        color: white;
-    }
+  .working_title {
+    font-size: 16px;
+    color: white;
+  }
 
-    .day {
-        margin-bottom: 2rem;
-    }
+  .day {
+    margin-bottom: 2rem;
+  }
 }

@@ -192,8 +192,9 @@ li {
     padding: 1rem 0;
   }
 
-  .nav_list button {
-    font-size: 32px;
+  .nav_list button,
+  .nav_list a {
+    font-size: 24px;
   }
 
   /* Viss Par Nav Burger */

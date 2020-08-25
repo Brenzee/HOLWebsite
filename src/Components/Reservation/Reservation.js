@@ -13,11 +13,29 @@ class Reservation extends Component {
         <form name="reservation" method="POST" action="">
           <input type="hidden" name="form-name" value="reservation" />
           <label htmlFor="name">Vārds</label>
-          <input type="text" id="name" name="name" placeholder="Raitis" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Raitis"
+            required
+          />
           <label htmlFor="date">Datums</label>
-          <input type="date" id="date" name="date" placeholder="DD/MM/GGGG" />
+          <input
+            type="date"
+            id="date"
+            name="date"
+            placeholder="DD/MM/GGGG"
+            required
+          />
           <label htmlFor="time">Laiks</label>
-          <input type="time" id="time" name="time" placeholder="**:**" />
+          <input
+            type="time"
+            id="time"
+            name="time"
+            placeholder="**:**"
+            required
+          />
           <label htmlFor="count">Viesu skaits</label>
           <input
             type="number"
@@ -28,7 +46,7 @@ class Reservation extends Component {
             max="15"
           />
           <label htmlFor="phone">Telefona Numurs</label>
-          <input type="TEL" id="phone" name="phone" placeholder="+" />
+          <input type="TEL" id="phone" name="phone" placeholder="+" required />
           <label htmlFor="comments">Komentāri</label>
           <input
             type="text"

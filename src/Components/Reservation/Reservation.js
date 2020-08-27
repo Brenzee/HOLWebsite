@@ -19,6 +19,7 @@ class Reservation extends Component {
             name="name"
             placeholder="Raitis"
             required
+            title="Lūdzu ievadīt vārdu"
           />
           <label htmlFor="date">Datums</label>
           <input
@@ -44,9 +45,20 @@ class Reservation extends Component {
             placeholder="2"
             min="1"
             max="15"
+            title="Lūdzu ievadīt pareizi viesu skaitu"
           />
           <label htmlFor="phone">Telefona Numurs</label>
-          <input type="TEL" id="phone" name="phone" placeholder="+" required />
+          <div className="phone_number">
+            <div className="phone_plus">+</div>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder=""
+              title="Lūdzu ievadīt pareizi telefona numuru"
+              required
+            />
+          </div>
           <label htmlFor="comments">Komentāri</label>
           <input
             type="text"

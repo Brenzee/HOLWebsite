@@ -74,6 +74,21 @@
   color: #3abadf;
 }
 
+.phone_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phone_plus {
+  font-size: 18px;
+}
+
+#phone {
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 950px) {
   .reserve form input {
     margin: 0.5rem 0rem;

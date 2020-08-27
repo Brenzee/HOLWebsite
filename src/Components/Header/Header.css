@@ -52,7 +52,7 @@ li {
 .nav_item a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 15px;
@@ -61,6 +61,7 @@ li {
   align-self: center;
   border: none;
   cursor: pointer;
+  width: 120%;
 }
 
 .nav_item button:hover,

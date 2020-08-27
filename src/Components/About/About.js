@@ -21,18 +21,21 @@ const About = () => {
           <div className="about_item">
             <i className="fas fa-wine-glass"></i>
             <div className="item_text">
-              Mūsu plašajā ēdienkartē esam iekļāvuši svaigus salātus, uzkodas,
-              uzkodu plates, izcilus gaļas, zivs, veģetārus un pat vegānus
-              pamatēdienus, burgerus, pastas, ēdienus gatavotus uz grila, kā arī
-              izcilus desertus.
+              <span>Mūsu plašajā ēdienkartē</span> esam iekļāvuši svaigus
+              salātus, uzkodas, uzkodu plates, izcilus jūras velšu ēdienus,
+              veģetārus un vegānus ēdienus, pašu kūpinātu zivis un gaļu,
+              burgerus, pastas, ēdienus gatavotus uz grila, kā arī izcilus
+              desertus. Mūsu piedāvājumā ir arī Latvijā ražoti vīni un Latvijā
+              grauzdēta kafija.
             </div>
           </div>
           <div className="about_item">
-            <i className="fas fa-child"></i>
+            <i className="fas fa-baby"></i>
             <div className="item_text">
               Mīļi gaidām arī ģimenes ar bērniem, jo esam parūpējušies par
-              atsevišķu <span>bērnu ēdienkarti</span>,{" "}
-              <span>atraktīvu bērnu stūrīti</span>, kā arī{" "}
+              atsevišķu <span>krāsojamo bērnu ēdienkarti</span>,{" "}
+              <span>atraktīvu bērnu stūrīti</span>,{" "}
+              <span>āra bērna laukumiņu</span>, kā arī{" "}
               <span>pārtinamo galdiņu pašiem mazākajiem</span>.
             </div>
           </div>

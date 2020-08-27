@@ -42,10 +42,20 @@
   .keiterings_grid {
     grid-template-columns: 1fr;
     margin: 0;
+    margin-top: 1rem;
     padding: 0;
   }
 
+  .party {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3rem;
+  }
+
   .keiterings_title {
+    margin-top: 0rem;
     padding-bottom: 2rem !important;
     border-bottom: 2px solid #3abadf !important;
   }
@@ -67,7 +77,8 @@
 
 @media only screen and (max-width: 950px) {
   .keiterings {
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 0rem 2rem;
+    padding-top: 1rem;
   }
 }

@@ -60,6 +60,14 @@ class Header extends Component {
                   <button onClick={this.onClick}>Kontakti</button>
                 </ScrollIntoView>
               </li>
+              <li className="nav_item flags">
+                <a className="russian_flag" href="#">
+                  RUS
+                </a>
+                <a className="english_flag" href="#">
+                  ENG
+                </a>
+              </li>
             </ul>
             <div
               className={this.state.isButtonActive ? "burger hide " : "burger"}

@@ -75,6 +75,13 @@ li {
   outline: none;
 }
 
+.flags {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  color: white;
+}
+
 /* NAV BEIGAS */
 
 /* HERO VIDUS */
@@ -155,7 +162,7 @@ li {
   }
 
   .hero h1 {
-    font-size: 48px;
+    font-size: 64px;
     padding-bottom: 1rem;
   }
 
@@ -179,7 +186,7 @@ li {
     background: rgba(0, 0, 0, 0.86);
     height: 105vh;
     width: 100%;
-    margin-top: -2rem;
+    margin-top: 0rem;
     padding-bottom: 10vh;
     z-index: 25;
     transition: all 0.5s ease-out;

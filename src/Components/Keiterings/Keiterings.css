@@ -47,15 +47,11 @@
   }
 
   .party {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 3rem;
+    margin: 0;
   }
 
   .keiterings_title {
-    margin-top: 0rem;
+    margin-top: 3rem;
     padding-bottom: 2rem !important;
     border-bottom: 2px solid #3abadf !important;
   }
@@ -65,13 +61,8 @@
   }
 
   .keiterings_grid div {
-    margin: 0;
     border: none;
     box-shadow: none;
-  }
-
-  .keiterings_grid > div > div {
-    padding: 3rem;
   }
 }
 

@@ -52,7 +52,7 @@ class Header extends Component {
               </li>
               <li className="nav_item">
                 <ScrollIntoView selector="#keiterings">
-                  <button onClick={this.onClick}>Keiterings</button>
+                  <button onClick={this.onClick}>Banketi</button>
                 </ScrollIntoView>
               </li>
               <li className="nav_item">
@@ -74,6 +74,7 @@ class Header extends Component {
               <i className="fas fa-times"></i>
             </div>
           </div>
+
           <div className="hero">
             <h1>Sveicināti</h1>
             <h2>House of Light</h2>

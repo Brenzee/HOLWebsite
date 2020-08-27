@@ -13,8 +13,9 @@ const About = () => {
           <div className="about_item">
             <i className="fas fa-utensils"></i>
             <div className="item_text">
-              Esam radījuši vietu, kur atpūsties no ikdienas steigas, baudīt
-              gardu maltīti vai atspirdzinošu dzērienu.
+              Esam radījuši vietu, kur atpūsties no ikdienas steigas,{" "}
+              <span>baudīt gardu maltīti</span> vai{" "}
+              <span>atspirdzinošu dzērienu</span>.
             </div>
           </div>
           <div className="about_item">
@@ -30,8 +31,9 @@ const About = () => {
             <i className="fas fa-child"></i>
             <div className="item_text">
               Mīļi gaidām arī ģimenes ar bērniem, jo esam parūpējušies par
-              atsevišķu bērnu ēdienkarti, atraktīvu bērnu stūrīti, kā arī
-              pārtinamo galdiņu pašiem mazākajiem.
+              atsevišķu <span>bērnu ēdienkarti</span>,{" "}
+              <span>atraktīvu bērnu stūrīti</span>, kā arī{" "}
+              <span>pārtinamo galdiņu pašiem mazākajiem</span>.
             </div>
           </div>
         </div>

@@ -56,6 +56,11 @@
   font-weight: 500;
 }
 
+.item_text span {
+  color: #3abadf;
+  font-weight: 600;
+}
+
 div .hol_picture {
   background: url(../../img/About.JPG);
   background-repeat: no-repeat;

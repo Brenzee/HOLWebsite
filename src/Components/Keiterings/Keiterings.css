@@ -47,11 +47,13 @@
   }
 
   .party {
-    margin: 0;
+    margin: 0 2rem;
+    padding: 1rem;
+    width: auto;
+    max-height: 80%;
   }
 
   .keiterings_title {
-    margin-top: 3rem;
     padding-bottom: 2rem !important;
     border-bottom: 2px solid #3abadf !important;
   }
@@ -68,8 +70,8 @@
 
 @media only screen and (max-width: 950px) {
   .keiterings {
-    margin-top: 5rem;
-    padding: 0rem 2rem;
+    margin-top: 3rem;
+    padding: 0rem 0rem;
     padding-top: 1rem;
   }
 }

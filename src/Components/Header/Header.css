@@ -78,7 +78,7 @@ li {
 .flags {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 60%;
   color: white;
 }
 
@@ -162,12 +162,12 @@ li {
   }
 
   .hero h1 {
-    font-size: 64px;
+    font-size: 56px;
     padding-bottom: 1rem;
   }
 
   .hero h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .hero a {

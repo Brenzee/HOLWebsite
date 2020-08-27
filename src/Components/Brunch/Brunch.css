@@ -1,31 +1,32 @@
 .brunch_about {
-    padding-top: 2rem;
+  padding-top: 2rem;
+  font-size: 14px;
 }
 
 .brunch {
-    background: rgba(255, 0, 0, 0.151);
+  background: rgba(255, 0, 0, 0.151);
 }
 
 .brunch_about a {
-    text-decoration: underline;
-    color: #DD2A7B;
+  text-decoration: underline;
+  color: #dd2a7b;
 }
 
 .brunch_about .facebook_link {
-    color: #4063AD;
+  color: #4063ad;
 }
 
 .brunch {
-    margin: 3rem 0rem;
-    padding: 2rem 8rem;
+  margin: 3rem 0rem;
+  padding: 2rem 8rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .brunch {
-        border: none;
-        border-radius: 0;
-        margin: 0;
-        margin-top: 3rem;
-        padding: 2rem;
-    }
+  .brunch {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
 }

@@ -4,7 +4,7 @@
 
 .keiterings_grid {
   display: grid;
-  height: 90vh;
+  height: 100vh;
   grid-template-columns: 1fr 1fr;
   margin: 0rem 5rem;
   padding: 1rem 2rem;
@@ -25,7 +25,7 @@
   font-size: 42px;
   text-align: center;
   border-bottom: 2px solid #3abadf;
-  padding: 2rem 0;
+  padding: 0;
   font-weight: 600;
   align-self: center;
 }
@@ -47,7 +47,7 @@
 
 .keit_title {
   display: flex;
-  padding: 2rem 0;
+  padding: 0;
   text-align: center;
   justify-content: center;
 }
@@ -77,9 +77,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .keiterings {
+    min-height: 100%;
+  }
+
   .keiterings_grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 35% 70%;
+    height: 100%;
+    grid-template-rows: 25% 75%;
     margin: 0;
     margin-top: 1rem;
     padding: 0;
@@ -93,9 +98,9 @@
   }
 
   .keiterings_title {
-    padding-bottom: 2rem !important;
     border-bottom: 2px solid #3abadf !important;
     font-size: 36px;
+    text-align: left;
   }
 
   .keiterings_grid div {
@@ -109,6 +114,7 @@
 
   .keit_title {
     font-size: 28px;
+    text-align: left;
   }
 
   .keit_item i {
@@ -116,11 +122,12 @@
   }
 
   .keit_items {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .keitering_text {
     grid-template-rows: 25% 20% 90%;
+    margin-bottom: 5rem;
   }
 }
 

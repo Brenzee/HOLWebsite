@@ -1,7 +1,4 @@
 /* AIZMUGURES BILDE AR GRADIENT */
-* {
-  -webkit-overflow-scrolling: touch;
-}
 
 .background {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -39,20 +36,27 @@
   display: flex;
 }
 
+ul {
+  width: 60%;
+  align-self: left;
+}
+
 li {
   align-self: center;
 }
 
 .nav_item {
-  margin-left: 1.5rem;
-  padding: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 1rem 0.5rem;
+  width: 10rem;
+  text-align: center;
 }
 
 .nav_item button,
 .nav_item a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 15px;
@@ -61,7 +65,7 @@ li {
   align-self: center;
   border: none;
   cursor: pointer;
-  width: 120%;
+  width: auto;
 }
 
 .nav_item button:hover,
@@ -78,9 +82,11 @@ li {
 
 .flags {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  width: 20%;
   color: white;
+  padding: 0rem;
+  justify-content: center;
+  align-items: center;
 }
 
 /* NAV BEIGAS */
@@ -188,7 +194,8 @@ li {
     height: 105vh;
     width: 100%;
     margin-top: 0rem;
-    padding-bottom: 10vh;
+    padding-top: 2rem;
+    padding-bottom: 20vh;
     z-index: 25;
     transition: all 0.5s ease-out;
   }
@@ -233,4 +240,10 @@ li {
   }
 
   /* Beigas par Nav Burger */
+}
+
+@media only screen and (max-width: 950px) {
+  ul {
+    width: 30%;
+  }
 }

@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
+import RussianFlag from "../../img/russian.png";
+import EnglishFlag from "../../img/english.png";
 
 class Header extends Component {
   constructor() {
@@ -62,10 +64,18 @@ class Header extends Component {
               </li>
               <li className="nav_item flags">
                 <a className="russian_flag" href="#">
-                  RUS
+                  <img
+                    src={RussianFlag}
+                    alt="house_of_light_russian"
+                    height="18px"
+                  />
                 </a>
                 <a className="english_flag" href="#">
-                  ENG
+                  <img
+                    src={EnglishFlag}
+                    alt="house_of_light_english"
+                    height="18px"
+                  />
                 </a>
               </li>
             </ul>

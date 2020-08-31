@@ -76,6 +76,10 @@
   align-self: center;
 }
 
+.blue {
+  color: #3abadf;
+}
+
 @media only screen and (max-width: 600px) {
   .keiterings {
     min-height: 100%;

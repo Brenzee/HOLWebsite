@@ -17,7 +17,7 @@ class Reservation extends Component {
             type="text"
             id="name"
             name="name"
-            placeholder="Raitis"
+            placeholder="Kārlis"
             required
             title="Lūdzu ievadīt vārdu"
           />

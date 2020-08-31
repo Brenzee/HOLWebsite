@@ -35,7 +35,8 @@ const Keiterings = () => {
             <div className="keit_item">
               <i className="fas fa-address-card"></i>
               <div className="item_text">
-                Vairāk informācijai rakstīt ...@hol.lv.
+                Vairāk informācijai rakstīt{" "}
+                <span className="blue">raitis@hol.lv</span>.
               </div>
             </div>
           </div>

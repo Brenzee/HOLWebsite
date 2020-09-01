@@ -44,22 +44,22 @@ class Header extends Component {
               </li>
               <li className="nav_item">
                 <ScrollIntoView selector="#about">
-                  <button onClick={this.onClick}>Par mums</button>
+                  <button onClick={this.onClick}>{this.props.about}</button>
                 </ScrollIntoView>
               </li>
               <li className="nav_item">
                 <ScrollIntoView selector="#brunch">
-                  <button onClick={this.onClick}>Brančš</button>
+                  <button onClick={this.onClick}>{this.props.brunch}</button>
                 </ScrollIntoView>
               </li>
               <li className="nav_item">
                 <ScrollIntoView selector="#keiterings">
-                  <button onClick={this.onClick}>Banketi</button>
+                  <button onClick={this.onClick}>{this.props.banquet}</button>
                 </ScrollIntoView>
               </li>
               <li className="nav_item">
                 <ScrollIntoView selector="#footer">
-                  <button onClick={this.onClick}>Kontakti</button>
+                  <button onClick={this.onClick}>{this.props.contacts}</button>
                 </ScrollIntoView>
               </li>
               <li className="nav_item flags">
@@ -94,10 +94,10 @@ class Header extends Component {
           </div>
 
           <div className="hero">
-            <h1>Sveicināti</h1>
+            <h1>{this.props.welcome}</h1>
             <h2>House of Light</h2>
             <ScrollIntoView selector="#reserve">
-              <button>Rezervēt galdiņu</button>
+              <button>{this.props.reserve}</button>
             </ScrollIntoView>
           </div>
         </div>

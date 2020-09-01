@@ -13,15 +13,23 @@ import SocialMedia from "./Components/SocialMedia/SocialMedia";
 const App = () => {
   return (
     <div>
-      <Header />
+      <Header
+        about="Par mums"
+        brunch="Brančš"
+        menu="Menu"
+        banquet="Banketi"
+        contacts="Kontakti"
+        welcome="Sveicināti"
+        reserve="Rezervēt galdiņu"
+      />
       <SocialMedia />
       <WhiteWave />
-      <About />
-      <Brunch />
-      <Keiterings />
-      <Reservation />
+      <About lang="lv" />
+      <Brunch lang="lv" />
+      <Keiterings lang="lv" />
+      <Reservation lang="lv" />
       <WhiteWaveBottom />
-      <Footer />
+      <Footer lang="lv" />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Reservation from "./Components/Reservation/Reservation";
 import Brunch from "./Components/Brunch/Brunch";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import SocialMedia from "./Components/SocialMedia/SocialMedia";
+import Gallery from "./Components/Gallery/Gallery";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Brunch lang="lv" />
       <Keiterings lang="lv" />
       <Reservation lang="lv" />
+      <Gallery />
       <WhiteWaveBottom />
       <Footer lang="lv" />
     </div>

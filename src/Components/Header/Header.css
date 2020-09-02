@@ -35,7 +35,7 @@
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  width: 70%;
+  width: 100%;
 }
 
 li {
@@ -77,8 +77,8 @@ li {
 }
 
 .flags {
+  align-self: center;
   display: flex;
-  width: 20%;
   color: white;
   padding: 0rem;
   justify-content: center;

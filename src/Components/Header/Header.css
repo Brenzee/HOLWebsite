@@ -129,8 +129,9 @@ li {
   outline: none;
 }
 
-.burger {
+.burger i {
   display: none;
+  color: white;
 }
 
 .exit {
@@ -210,7 +211,7 @@ li {
   }
 
   /* Viss Par Nav Burger */
-  .burger {
+  .burger i {
     display: block;
     cursor: pointer;
     color: white;

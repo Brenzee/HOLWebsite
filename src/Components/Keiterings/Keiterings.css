@@ -1,5 +1,5 @@
 .bankets {
-  margin: 2rem 8rem;
+  margin: 3rem 8rem;
 }
 
 .bankets_grid {
@@ -10,6 +10,7 @@
 
 .image img {
   width: 100%;
+  min-height: 70vh;
   max-height: 90vh;
   object-fit: cover;
   border-radius: 25px;
@@ -51,7 +52,7 @@
   grid-template-columns: 15% 85%;
 }
 
-.fas {
+.bankets_item .fas {
   color: #3abadf;
   font-size: 32px;
 }
@@ -79,6 +80,7 @@
   }
 
   .image img {
+    min-height: 0;
     height: 30vh;
   }
 
@@ -95,7 +97,7 @@
     grid-template-columns: 20% 80%;
   }
 
-  .fas {
+  .banekts_item .fas {
     padding: 6px;
   }
 

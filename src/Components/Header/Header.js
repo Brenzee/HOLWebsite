@@ -2,8 +2,11 @@ import React from "react";
 import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
+
+//Components
 import RussianFlag from "../../img/russian.png";
 import EnglishFlag from "../../img/english.png";
+import Logo from "../../img/logo.png";
 
 class Header extends Component {
   constructor() {
@@ -24,7 +27,7 @@ class Header extends Component {
         <div className="background">
           <div className="header">
             <div className="logo">
-              <img src={require("../../img/logo.png")} alt="" />
+              <img src={Logo} alt="House of light restaurant" />
             </div>
             <ul
               className={
@@ -92,7 +95,6 @@ class Header extends Component {
               <i className="fas fa-times"></i>
             </div>
           </div>
-
           <div className="hero">
             <h1>{this.props.welcome}</h1>
             <h2>House of Light</h2>

@@ -37,7 +37,7 @@
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 1rem 0;
-  margin: auto;
+  margin: 0;
 }
 
 .about_item i {

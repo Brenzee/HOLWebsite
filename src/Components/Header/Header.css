@@ -18,7 +18,7 @@
   padding-top: 5rem;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 10rem;
 }
 
 /* LOGO */
@@ -34,10 +34,8 @@
 .nav_list {
   list-style-type: none;
   display: flex;
-}
-
-ul {
-  width: 80%;
+  justify-content: flex-end;
+  width: 70%;
 }
 
 li {
@@ -47,7 +45,6 @@ li {
 .nav_item {
   margin-left: 0.5rem;
   padding: 1rem 0.5rem;
-  width: 10rem;
   text-align: center;
 }
 
@@ -55,7 +52,7 @@ li {
 .nav_item a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 15px;

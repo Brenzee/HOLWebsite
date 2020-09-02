@@ -1,4 +1,111 @@
-.keiterings {
+.bankets {
+  margin: 2rem 8rem;
+}
+
+.bankets_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+}
+
+.image img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Visa teksta puse */
+.about_bankets {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Lielais virsrakts */
+.bankets_title {
+  font-size: 42px;
+  font-weight: 600;
+  border-bottom: 2px solid #3abadf;
+  padding-bottom: 1rem;
+}
+
+/* Banketa Zilais apaksvirsraksts */
+.bankets_subtitle {
+  font-size: 36px;
+  color: #3abadf;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+/* Banketa uzskaites punkti */
+.bankets_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+/* Katrs no banketa uzskaites punktiem */
+.bankets_item {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.fas {
+  color: #3abadf;
+  font-size: 32px;
+}
+
+.bankets_text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bankets_text a {
+  text-decoration: underline;
+  color: #3abadf;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 950px) {
+  .bankets {
+    margin: 2rem;
+    margin-top: 4rem;
+  }
+
+  .bankets_grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .image img {
+    height: 30vh;
+  }
+
+  .bankets_title {
+    font-size: 32px;
+  }
+
+  .bankets_subtitle {
+    font-size: 28px;
+  }
+
+  .bankets_item {
+    padding-bottom: 2rem;
+    grid-template-columns: 20% 80%;
+  }
+
+  .fas {
+    padding: 6px;
+  }
+
+  .bankets_text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* .keiterings {
   min-height: 100vh;
 }
 
@@ -87,7 +194,6 @@
 
   .keiterings_grid {
     grid-template-columns: 1fr;
-    height: 100%;
     grid-template-rows: 25% 75%;
     margin: 0;
     margin-top: 1rem;
@@ -147,4 +253,4 @@
     grid-template-columns: 20% 80%;
     padding-bottom: 1rem;
   }
-}
+} */

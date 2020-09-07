@@ -66,7 +66,7 @@ class Reservation extends Component {
             placeholder={this.props.text.reserve_comments_placeholder}
           />
           <button type="submit" onClick={this.submitButton}>
-            Rezervēt
+            {this.props.text.res_button}
           </button>
         </form>
       </div>

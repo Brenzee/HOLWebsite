@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 //Components
 import RussianFlag from "../../img/russian.png";
 import EnglishFlag from "../../img/english.png";
+import LatvianFlag from "../../img/latvian.png";
 import Logo from "../../img/logo.png";
-import WhiteWave from "../../img/WhiteWave.png";
 
 class Header extends Component {
   constructor() {
@@ -70,14 +70,21 @@ class Header extends Component {
               <li className="nav_item flags">
                 <Link className="russian_flag" to="/ru">
                   <img
-                    src={RussianFlag}
+                    src={
+                      this.props.flag1 === "Russian" ? RussianFlag : LatvianFlag
+                    }
                     alt="house_of_light_russian"
                     height="18px"
                   />
                 </Link>
-                <Link className="english_flag" to="/eng">
+                <Link
+                  className="english_flag"
+                  to={this.props.flag2 === "English" ? "/eng" : "/"}
+                >
                   <img
-                    src={EnglishFlag}
+                    src={
+                      this.props.flag2 === "English" ? EnglishFlag : LatvianFlag
+                    }
                     alt="house_of_light_english"
                     height="18px"
                   />

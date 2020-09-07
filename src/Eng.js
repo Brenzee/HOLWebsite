@@ -11,9 +11,26 @@ import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentEng from "./content/contentEng";
 
+import { Helmet } from "react-helmet";
+
 const Eng = () => {
   return (
     <div>
+      <Helmet>
+        <html lang="en" amp />
+        <title>Grill Bar House of Light - Restaurant in Jurmala</title>
+        <meta property="og:locale" content="en_LV" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Restaurant House of Light" />
+        <meta
+          name="keywords"
+          content="restaurant in jurmala, restaurant, restaurant jomas iela, restaurant jomas street, brunch jurmala, sunday brunch"
+        />
+        <meta
+          name="description"
+          content="House of Light - Grill Bar restaurant in Jurmala."
+        />
+      </Helmet>
       <Header
         about={contentEng.about}
         brunch={contentEng.brunch}

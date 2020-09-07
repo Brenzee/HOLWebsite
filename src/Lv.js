@@ -11,9 +11,25 @@ import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
 
+import { Helmet } from "react-helmet";
+
 const Lv = () => {
   return (
     <div>
+      <Helmet>
+        <title>Grilbārs House of Light - Restorāns Jūrmalas sirdī</title>
+        <meta property="og:locale" content="lv_LV" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Restorāns House of Light" />
+        <meta
+          name="keywords"
+          content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
+        />
+        <meta
+          name="description"
+          content="House of Light - Grilbāra restorāns Jūrmalas sirdī."
+        />
+      </Helmet>
       <Header
         about={contentLv.about}
         brunch={contentLv.brunch}

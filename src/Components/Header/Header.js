@@ -2,11 +2,13 @@ import React from "react";
 import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
+import { Link } from "react-router-dom";
 
 //Components
 import RussianFlag from "../../img/russian.png";
 import EnglishFlag from "../../img/english.png";
 import Logo from "../../img/logo.png";
+import WhiteWave from "../../img/WhiteWave.png";
 
 class Header extends Component {
   constructor() {
@@ -66,20 +68,20 @@ class Header extends Component {
                 </ScrollIntoView>
               </li>
               <li className="nav_item flags">
-                <a className="russian_flag" href="#">
+                <Link className="russian_flag" to="/ru">
                   <img
                     src={RussianFlag}
                     alt="house_of_light_russian"
                     height="18px"
                   />
-                </a>
-                <a className="english_flag" href="#">
+                </Link>
+                <Link className="english_flag" to="/eng">
                   <img
                     src={EnglishFlag}
                     alt="house_of_light_english"
                     height="18px"
                   />
-                </a>
+                </Link>
               </li>
             </ul>
             <div

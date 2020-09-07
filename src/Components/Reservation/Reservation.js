@@ -3,81 +3,74 @@ import "./Reservation.css";
 
 class Reservation extends Component {
   submitButton(e) {}
-
   render() {
-    if (this.props.lang === "lv") {
-      return (
-        <div className="reserve" id="reserve">
-          <div className="reserve_title">
-            <h1>Rezervēt</h1>
-          </div>
-          <form name="reservation" method="POST" action="">
-            <input type="hidden" name="form-name" value="reservation" />
-            <label htmlFor="name">Vārds</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Kārlis"
-              required
-              title="Lūdzu ievadīt vārdu"
-            />
-            <label htmlFor="date">Datums</label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              placeholder="DD/MM/GGGG"
-              required
-            />
-            <label htmlFor="time">Laiks</label>
-            <input
-              type="time"
-              id="time"
-              name="time"
-              placeholder="**:**"
-              required
-            />
-            <label htmlFor="count">Viesu skaits</label>
+    return (
+      <div className="reserve" id="reserve">
+        <div className="reserve_title">
+          <h1>{this.props.text.reserve_title}</h1>
+        </div>
+        <form name="reservation" method="POST" action="">
+          <input type="hidden" name="form-name" value="reservation" />
+          <label htmlFor="name">{this.props.text.reserve_name}</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder={this.props.text.reserve_name_placeholder}
+            required
+            title="Lūdzu ievadīt vārdu"
+          />
+          <label htmlFor="date">{this.props.text.reserve_date}</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            placeholder="DD/MM/GGGG"
+            required
+          />
+          <label htmlFor="time">{this.props.text.reserve_time}</label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+            placeholder="**:**"
+            required
+          />
+          <label htmlFor="count">{this.props.text.reserve_count}</label>
+          <input
+            type="number"
+            id="count"
+            name="count"
+            placeholder="2"
+            min="1"
+            max="15"
+            title="Lūdzu ievadīt pareizi viesu skaitu"
+          />
+          <label htmlFor="phone">{this.props.text.reserve_phone}</label>
+          <div className="phone_number">
+            <div className="phone_plus">+</div>
             <input
               type="number"
-              id="count"
-              name="count"
-              placeholder="2"
-              min="1"
-              max="15"
-              title="Lūdzu ievadīt pareizi viesu skaitu"
+              id="phone"
+              name="phone"
+              placeholder=""
+              title="Lūdzu ievadīt pareizi telefona numuru"
+              required
             />
-            <label htmlFor="phone">Telefona Numurs</label>
-            <div className="phone_number">
-              <div className="phone_plus">+</div>
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                placeholder=""
-                title="Lūdzu ievadīt pareizi telefona numuru"
-                required
-              />
-            </div>
-            <label htmlFor="comments">Komentāri</label>
-            <input
-              type="text"
-              id="comments"
-              name="comments"
-              placeholder="Nepieciešams bērnu krēsliņš utt."
-            />
-            <button type="submit" onClick={this.submitButton}>
-              Rezervēt
-            </button>
-          </form>
-        </div>
-      );
-    } else if (this.props.lang === "en") {
-      return <div className="en"></div>;
-    } else if (this.props.lang === "ru") {
-      return <div className="ru"></div>;
-    }
+          </div>
+          <label htmlFor="comments">{this.props.text.reserve_comments}</label>
+          <input
+            type="text"
+            id="comments"
+            name="comments"
+            placeholder={this.props.text.reserve_comments_placeholder}
+          />
+          <button type="submit" onClick={this.submitButton}>
+            Rezervēt
+          </button>
+        </form>
+      </div>
+    );
   }
 }
 export default Reservation;

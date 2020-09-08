@@ -14,13 +14,13 @@
 .social_media i {
   color: #3abadf;
   font-size: 36px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
   .social_media {
     position: absolute;
-    top: 8rem;
+    top: 25vh;
     right: -3px;
   }
 }

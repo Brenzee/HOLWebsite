@@ -11,7 +11,6 @@
 .image img {
   width: 100%;
   min-height: 70vh;
-  max-height: 80vh;
   object-fit: cover;
   border-radius: 25px;
   transition: all 0.1s ease-in;
@@ -38,7 +37,7 @@
 
 /* Banketa Zilais apaksvirsraksts */
 .bankets_subtitle {
-  font-size: 36px;
+  font-size: 28px;
   color: #3abadf;
   font-weight: 600;
   padding: 2rem 0;
@@ -56,6 +55,7 @@
 .bankets_item {
   display: grid;
   grid-template-columns: 15% 85%;
+  margin-bottom: 1rem;
 }
 
 .bankets_item .fas {

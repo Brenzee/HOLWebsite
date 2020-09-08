@@ -17,7 +17,7 @@ const Footer = ({ text }) => {
         </div>
         <div className="contact_item">
           <i className="fas fa-phone-alt"></i>
-          <a href="tel:+37129223933">+371 26360603</a>
+          <a href="tel:+37126360603">+371 26360603</a>
         </div>
         <div className="contact_item">
           <i className="far fa-envelope"></i>
@@ -29,8 +29,8 @@ const Footer = ({ text }) => {
           <h1>{text.working_hours}</h1>
         </div>
         <div className="day">
-          <h3>{text.work_days}</h3>
-          <h4>12:00 - 23:00</h4>
+          <h2>{text.work_days}</h2>
+          <h3>12:00 - 23:00</h3>
         </div>
         <div className="rights">
           <h4>{text.rights}</h4>

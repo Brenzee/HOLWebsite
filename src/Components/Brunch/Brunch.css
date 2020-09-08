@@ -20,7 +20,7 @@
   padding: 2rem 8rem;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .brunch {
     border: none;
     border-radius: 0;

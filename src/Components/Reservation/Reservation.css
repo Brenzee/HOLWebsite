@@ -83,6 +83,7 @@
 
 .phone_plus {
   font-size: 18px;
+  margin-right: 3px;
 }
 
 #phone {
@@ -90,7 +91,7 @@
   margin-top: 0;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .reserve form input {
     margin: 0.5rem 0rem;
     border: 1px solid #3abadf;
@@ -105,7 +106,9 @@
 
   .reserve {
     margin: 0;
-    margin-bottom: -1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   .reserve h1 {

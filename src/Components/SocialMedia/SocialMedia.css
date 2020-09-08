@@ -8,13 +8,13 @@
   padding-right: 3rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
-.social_media i {
+.social_media a {
+  cursor: pointer;
   color: #3abadf;
   font-size: 36px;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {

@@ -12,6 +12,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
+import Logo from "./img/logo.png";
 
 import { Helmet } from "react-helmet";
 
@@ -23,13 +24,16 @@ const Lv = () => {
         <meta property="og:locale" content="lv_LV" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Restorāns House of Light" />
+        <meta property="og:image" content={Logo} />
+        <meta property="og:url" content="https://www.hol.lv" />
+        <meta property="og:description" content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem"
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
         />
         <meta
           name="description"
-          content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, pārsteidz ar svētdienas brančiem."
+          content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem."
         />
       </Helmet>
       <Header

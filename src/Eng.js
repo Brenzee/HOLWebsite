@@ -27,6 +27,7 @@ const Eng = () => {
         <meta property="og:site_name" content="Restaurant House of Light" />
         <meta property="og:image" content={Logo} />
         <meta property="og:url" content="https://www.hol.lv/eng" />
+        <meta property="og:title" content="Grill Bar House of Light" />
         <meta
           property="og:description"
           content="House of Light - Grill Bar restaurant in Jurmala. Grill Bar on Jomas street, loved for sunday brunches and wonderful food"

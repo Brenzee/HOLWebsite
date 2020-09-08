@@ -26,6 +26,7 @@ const Lv = () => {
         <meta property="og:site_name" content="Restorāns House of Light" />
         <meta property="og:image" content={Logo} />
         <meta property="og:url" content="https://www.hol.lv" />
+        <meta property="og:title" content="Grilbārs House of Light" />
         <meta
           property="og:description"
           content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem"

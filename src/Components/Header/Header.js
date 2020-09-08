@@ -69,7 +69,7 @@ class Header extends Component {
               </li>
               <li className="nav_item flags">
                 <Link
-                  className="russian_flag"
+                  className="russian_flag flag"
                   to={this.props.flag1 === "Russian" ? "/ru" : "/"}
                 >
                   <img
@@ -81,7 +81,7 @@ class Header extends Component {
                   />
                 </Link>
                 <Link
-                  className="english_flag"
+                  className="english_flag flag"
                   to={this.props.flag2 === "English" ? "/eng" : "/"}
                 >
                   <img

@@ -12,6 +12,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentEng from "./content/contentEng";
+import Logo from "./img/logo.png";
 
 import { Helmet } from "react-helmet";
 
@@ -24,6 +25,13 @@ const Eng = () => {
         <meta property="og:locale" content="en_LV" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Restaurant House of Light" />
+        <meta property="og:image" content={Logo} />
+        <meta property="og:url" content="https://www.hol.lv/eng" />
+        <meta
+          property="og:description"
+          content="House of Light - Grill Bar restaurant in Jurmala. Grill Bar on Jomas street, loved for sunday brunches and wonderful food"
+        />
+
         <meta
           name="keywords"
           content="restaurant in jurmala, restaurant, restaurant jomas iela, restaurant jomas street, brunch jurmala, sunday brunch"

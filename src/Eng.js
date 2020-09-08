@@ -1,4 +1,6 @@
 import React from "react";
+
+//All components
 import Header from "./Components/Header/Header";
 import SocialMedia from "./Components/SocialMedia/SocialMedia";
 import WhiteWave from "./Components/White Wave/WhiteWave";

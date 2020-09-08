@@ -68,7 +68,10 @@ class Header extends Component {
                 </ScrollIntoView>
               </li>
               <li className="nav_item flags">
-                <Link className="russian_flag" to="/ru">
+                <Link
+                  className="russian_flag"
+                  to={this.props.flag1 === "Russian" ? "/ru" : "/"}
+                >
                   <img
                     src={
                       this.props.flag1 === "Russian" ? RussianFlag : LatvianFlag

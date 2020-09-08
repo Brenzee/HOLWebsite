@@ -1,5 +1,5 @@
 import React from "react";
-
+//All components
 //All components
 import Header from "./Components/Header/Header";
 import SocialMedia from "./Components/SocialMedia/SocialMedia";
@@ -12,10 +12,11 @@ import Gallery from "./Components/Gallery/Gallery";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
+import contentRu from "./content/contentRu";
 
 import { Helmet } from "react-helmet";
 
-const Lv = () => {
+function Ru() {
   return (
     <div>
       <Helmet>
@@ -40,8 +41,8 @@ const Lv = () => {
         contacts={contentLv.contacts}
         welcome={contentLv.hero1}
         reserve={contentLv.res_button}
-        flag1={contentLv.flag1}
-        flag2={contentLv.flag2}
+        flag1={contentRu.flag1}
+        flag2={contentRu.flag2}
       />
       <SocialMedia />
       <WhiteWave />
@@ -54,5 +55,6 @@ const Lv = () => {
       <Footer text={contentLv} />
     </div>
   );
-};
-export default Lv;
+}
+
+export default Ru;

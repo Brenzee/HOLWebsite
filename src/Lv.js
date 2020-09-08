@@ -29,7 +29,7 @@ const Lv = () => {
         />
         <meta
           name="description"
-          content="House of Light - Grilbāra restorāns Jūrmalas sirdī."
+          content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, pārsteidz ar svētdienas brančiem."
         />
       </Helmet>
       <Header

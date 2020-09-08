@@ -8,7 +8,7 @@ const contentLv = {
   flag2: "English",
   hero1: "Sveicināti",
   hero2: "House of light",
-  res_button: "Rezervēt galdiņu",
+  res_button: "Veikt rezervāciju",
   about_title:
     "Laipni lūgti House of Light – mājīgā restorānā pašā Jūrmalas sirdī!",
   about1:

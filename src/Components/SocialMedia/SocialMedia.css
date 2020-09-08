@@ -20,7 +20,7 @@
 @media only screen and (max-width: 600px) {
   .social_media {
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     right: -3px;
   }
 }

@@ -93,17 +93,17 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 60vh;
   color: white;
   padding-bottom: 2rem;
 }
 
 .hero h1 {
-  font-size: 84px;
+  font-size: 72px;
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 .hero button {

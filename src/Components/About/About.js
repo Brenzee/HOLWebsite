@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import AboutImg from "../../img/About1.jpg";
 
 const About = (props) => {
   return (
@@ -21,7 +22,9 @@ const About = (props) => {
           </div>
         </div>
       </div>
-      <div className="hol_picture"></div>
+      <div className="hol_picture">
+        <img src={AboutImg} alt="house_of_light_about" />
+      </div>
     </div>
   );
 };

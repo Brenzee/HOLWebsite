@@ -10,7 +10,7 @@ const contentEng = {
   hero2: "House of light",
   res_button: "Book a table",
   about_title:
-    "Welcome to House of Light – heart-welcoming restaurant in the heart of Jūrmala",
+    "Welcome to House of Light – warm-welcoming restaurant in the heart of Jūrmala",
   about1:
     "Esam radījuši vietu, kur atpūsties no ikdienas steigas, baudīt gardu maltīti vai atspirdzinošu dzērienu.",
   about2:

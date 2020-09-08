@@ -7,7 +7,7 @@ const Keiterings = ({ text }) => {
     <div className="bankets" id="keiterings">
       <div className="bankets_grid">
         <div className="image">
-          <img src={Bankets_img} alt="izbraukuma bankets" />
+          <img src={Bankets_img} alt="house_of_light_bankets" />
         </div>
         <div className="about_bankets">
           <div className="bankets_title">{text.banquet_title}</div>

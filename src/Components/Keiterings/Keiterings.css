@@ -29,7 +29,7 @@
 }
 
 /* Lielais virsrakts */
-.bankets_title {
+.bankets_title h1 {
   font-size: 42px;
   font-weight: 600;
   border-bottom: 2px solid #3abadf;
@@ -37,7 +37,7 @@
 }
 
 /* Banketa Zilais apaksvirsraksts */
-.bankets_subtitle {
+.bankets_subtitle h2 {
   font-size: 28px;
   color: #3abadf;
   font-weight: 600;
@@ -91,11 +91,11 @@
     height: 30vh;
   }
 
-  .bankets_title {
+  .bankets_title h1 {
     font-size: 32px;
   }
 
-  .bankets_subtitle {
+  .bankets_subtitle h2 {
     font-size: 28px;
   }
 

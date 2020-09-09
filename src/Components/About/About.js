@@ -10,15 +10,21 @@ const About = (props) => {
         <div className="about_items">
           <div className="about_item">
             <i className="fas fa-utensils"></i>
-            <div className="item_text">{props.text.about1}</div>
+            <div className="item_text">
+              <h3>{props.text.about1}</h3>
+            </div>
           </div>
           <div className="about_item">
             <i className="fas fa-wine-glass"></i>
-            <div className="item_text">{props.text.about2}</div>
+            <div className="item_text">
+              <h3>{props.text.about2}</h3>
+            </div>
           </div>
           <div className="about_item">
             <i className="fas fa-baby"></i>
-            <div className="item_text">{props.text.about3}</div>
+            <div className="item_text">
+              <h3>{props.text.about3}</h3>
+            </div>
           </div>
         </div>
       </div>

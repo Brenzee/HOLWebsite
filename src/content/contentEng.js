@@ -10,22 +10,22 @@ const contentEng = {
   hero2: "House of light",
   res_button: "Book a table",
   about_title:
-    "Welcome to House of Light – warm-welcoming restaurant in the heart of Jūrmala",
+    "Welcome to House of Light - a cozy restaurant in the heart of Jūrmala!",
   about1:
-    "Esam radījuši vietu, kur atpūsties no ikdienas steigas, baudīt gardu maltīti vai atspirdzinošu dzērienu.",
+    "House of Light is a place to relax from the daily rush and enjoy a delicious meal or a refreshing drink.",
   about2:
-    "Mūsu plašajā ēdienkartē esam iekļāvuši svaigus salātus, uzkodas, uzkodu plates, izcilus jūras velšu ēdienus, veģetārus un vegānus ēdienus, pašu kūpinātu zivis un gaļu, burgerus, pastas, ēdienus gatavotus uz grila, kā arī izcilus desertus. Mūsu piedāvājumā ir arī Latvijā ražoti vīni un Latvijā grauzdēta kafija.",
+    "Our extensive menu includes fresh salads, snacks, snack plates, excellent seafood dishes, vegetarian and vegan dishes, home-smoked fish and meat, burgers, pastas, grilled dishes, as well as excellent desserts. We also offer wines produced in Latvia and coffee roasted in Latvia.",
   about3:
-    "Mīļi gaidām arī ģimenes ar bērniem, jo esam parūpējušies par atsevišķu krāsojamo bērnu ēdienkarti, atraktīvu bērnu stūrīti, āra bērna laukumiņu, kā arī pārtinamo galdiņu pašiem mazākajiem.",
+    "Families with children are also welcomed, as we have taken care of a separate paintable children's menu, an attractive children's corner, an outdoor children's playground, as well as a changing table for the little ones.",
   brunch_title: "Sunday brunch",
   brunch_about:
-    "Sakarā ar to, ka pašreizējie ierobežojumi nedod mums iespēju nodrošināt pilnvērtīgus Brančus, rūpējoties gan par klientu, gan darbinieku veselību un drošību esam nolēmuši tos pagaidām atcelt. Par visām izmaiņām saistībā ar Branču atsākšanos informēsim gan mūsu Facebook, gan Instagram lapās.",
+    "Due to the fact that current restrictions do not allow us to provide full-fledged brunches, taking care of the health and safety of both customers and employees, we have decided to not serve brunches temporarily. We will inform you about all changes related to the resumption of brunches on both our Facebook and Instagram pages.",
   banquet_title: "Banquet offer",
   banquet_subtitle: "You celebrate – we prepare!",
   banquet1:
-    "Pie mums var pasūtīt visu – sākot no gardām uzkodu platēm, svaigiem salātiem un visdažādākajiem karstajiem ēdieniem, līdz pat mājas limonādēm un citiem dzērieniem.",
-  banquet2: "Nodrošinām transportu ēdiena piegādei",
-  banquet3: "Piedāvājam apkalpojošo personālu Jūsu pasākumam",
+    "You can order everything from us - from delicious snack plates, fresh salads and a variety of hot dishes, to homemade lemonades and other drinks.",
+  banquet2: "We provide transport for banquet delivery.",
+  banquet3: "We offer service staff for your event, if necessary.",
   banquet4: "For more information contact",
   banquet_email: "raitis@hol.lv",
   reserve_title: "Make a reservation",

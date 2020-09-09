@@ -17,9 +17,9 @@ const contentLv = {
     "Mūsu plašajā ēdienkartē esam iekļāvuši svaigus salātus, uzkodas, uzkodu plates, izcilus jūras velšu ēdienus, veģetārus un vegānus ēdienus, pašu kūpinātu zivis un gaļu, burgerus, pastas, ēdienus gatavotus uz grila, kā arī izcilus desertus. Mūsu piedāvājumā ir arī Latvijā ražoti vīni un Latvijā grauzdēta kafija.",
   about3:
     "Mīļi gaidām arī ģimenes ar bērniem, jo esam parūpējušies par atsevišķu krāsojamo bērnu ēdienkarti, atraktīvu bērnu stūrīti, āra bērna laukumiņu, kā arī pārtinamo galdiņu pašiem mazākajiem.",
-  brunch_title: "Svētdienas Brančš",
+  brunch_title: "Svētdienas brančš",
   brunch_about:
-    "Sakarā ar to, ka pašreizējie ierobežojumi nedod mums iespēju nodrošināt pilnvērtīgus Brančus, rūpējoties gan par klientu, gan darbinieku veselību un drošību esam nolēmuši tos pagaidām atcelt. Par visām izmaiņām saistībā ar Branču atsākšanos informēsim gan mūsu Facebook, gan Instagram lapās.",
+    "Sakarā ar to, ka pašreizējie ierobežojumi nedod mums iespēju nodrošināt pilnvērtīgus brančus, rūpējoties gan par klientu, gan darbinieku veselību un drošību esam nolēmuši tos pagaidām atcelt. Par visām izmaiņām saistībā ar branču atsākšanos informēsim gan mūsu Facebook, gan Instagram lapās.",
   banquet_title: "Banketu piedāvājums",
   banquet_subtitle: "Jūs svinat – mēs gatavojam!",
   banquet1:

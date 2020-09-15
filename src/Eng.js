@@ -53,15 +53,26 @@ const Eng = () => {
         flag1={contentEng.flag1}
         flag2={contentEng.flag2}
       />
-      <Suspense>
-        <SocialMedia />
-        <WhiteWave />
+
+      <SocialMedia />
+      <WhiteWave />
+      <Suspense fallback={" "}>
         <About text={contentEng} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Brunch text={contentEng} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Keiterings text={contentEng} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Reservation text={contentEng} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Gallery />
-        <WhiteWaveBottom />
+      </Suspense>
+      <WhiteWaveBottom />
+      <Suspense fallback={" "}>
         <Footer text={contentEng} />
       </Suspense>
     </div>

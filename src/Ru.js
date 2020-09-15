@@ -44,15 +44,25 @@ function Ru() {
         flag1={contentRu.flag1}
         flag2={contentRu.flag2}
       />
-      <Suspense>
-        <SocialMedia />
-        <WhiteWave />
+      <SocialMedia />
+      <WhiteWave />
+      <Suspense fallback={" "}>
         <About text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Brunch text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Keiterings text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Reservation text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
         <Gallery />
-        <WhiteWaveBottom />
+      </Suspense>
+      <WhiteWaveBottom />
+      <Suspense fallback={" "}>
         <Footer text={contentLv} />
       </Suspense>
     </div>

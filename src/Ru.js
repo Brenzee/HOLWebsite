@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 //All components
 //All components
 import Header from "./Components/Header/Header";
@@ -44,15 +44,17 @@ function Ru() {
         flag1={contentRu.flag1}
         flag2={contentRu.flag2}
       />
-      <SocialMedia />
-      <WhiteWave />
-      <About text={contentLv} />
-      <Brunch text={contentLv} />
-      <Keiterings text={contentLv} />
-      <Reservation text={contentLv} />
-      <Gallery />
-      <WhiteWaveBottom />
-      <Footer text={contentLv} />
+      <Suspense>
+        <SocialMedia />
+        <WhiteWave />
+        <About text={contentLv} />
+        <Brunch text={contentLv} />
+        <Keiterings text={contentLv} />
+        <Reservation text={contentLv} />
+        <Gallery />
+        <WhiteWaveBottom />
+        <Footer text={contentLv} />
+      </Suspense>
     </div>
   );
 }

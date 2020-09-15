@@ -1,20 +1,22 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 //All components
 import Header from "./Components/Header/Header";
 import SocialMedia from "./Components/SocialMedia/SocialMedia";
 import WhiteWave from "./Components/White Wave/WhiteWave";
-import About from "./Components/About/About";
-import Brunch from "./Components/Brunch/Brunch";
-import Keiterings from "./Components/Keiterings/Keiterings";
-import Reservation from "./Components/Reservation/Reservation";
-import Gallery from "./Components/Gallery/Gallery";
+
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
 import Logo from "./img/logo.png";
 
 import { Helmet } from "react-helmet";
+
+const About = lazy(() => import("./Components/About/About"));
+const Brunch = lazy(() => import("./Components/Brunch/Brunch"));
+const Keiterings = lazy(() => import("./Components/Keiterings/Keiterings"));
+const Reservation = lazy(() => import("./Components/Reservation/Reservation"));
+const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 
 const Lv = () => {
   return (
@@ -40,6 +42,7 @@ const Lv = () => {
           content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem."
         />
       </Helmet>
+
       <Header
         about={contentLv.about}
         brunch={contentLv.brunch}
@@ -51,15 +54,28 @@ const Lv = () => {
         flag1={contentLv.flag1}
         flag2={contentLv.flag2}
       />
+
       <SocialMedia />
       <WhiteWave />
-      <About text={contentLv} />
-      <Brunch text={contentLv} />
-      <Keiterings text={contentLv} />
-      <Reservation text={contentLv} />
-      <Gallery />
+      <Suspense fallback={" "}>
+        <About text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
+        <Brunch text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
+        <Keiterings text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
+        <Reservation text={contentLv} />
+      </Suspense>
+      <Suspense fallback={" "}>
+        <Gallery />
+      </Suspense>
       <WhiteWaveBottom />
-      <Footer text={contentLv} />
+      <Suspense fallback={" "}>
+        <Footer text={contentLv} />
+      </Suspense>
     </div>
   );
 };

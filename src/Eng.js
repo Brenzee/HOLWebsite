@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 //All components
 import Header from "./Components/Header/Header";
@@ -53,15 +53,17 @@ const Eng = () => {
         flag1={contentEng.flag1}
         flag2={contentEng.flag2}
       />
-      <SocialMedia />
-      <WhiteWave />
-      <About text={contentEng} />
-      <Brunch text={contentEng} />
-      <Keiterings text={contentEng} />
-      <Reservation text={contentEng} />
-      <Gallery />
-      <WhiteWaveBottom />
-      <Footer text={contentEng} />
+      <Suspense>
+        <SocialMedia />
+        <WhiteWave />
+        <About text={contentEng} />
+        <Brunch text={contentEng} />
+        <Keiterings text={contentEng} />
+        <Reservation text={contentEng} />
+        <Gallery />
+        <WhiteWaveBottom />
+        <Footer text={contentEng} />
+      </Suspense>
     </div>
   );
 };

@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+Sitemap:https://houseoflightwebsite.netlify.app/sitemap.xml
+Sitemap:https://houseoflightwebsite.netlify.app/sitemap_index.xml
+Sitemap:https://houseoflightwebsite.netlify.app/sitemap.xml.gz

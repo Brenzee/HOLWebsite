@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutImg from "../../img/About1.jpg";
+import Table from "./Table";
 
 const About = (props) => {
   return (
@@ -11,26 +11,24 @@ const About = (props) => {
           <div className="about_item">
             <i className="fas fa-utensils"></i>
             <div className="item_text">
-              <h3>{props.text.about1}</h3>
+              <p>{props.text.about1}</p>
             </div>
           </div>
           <div className="about_item">
             <i className="fas fa-wine-glass"></i>
             <div className="item_text">
-              <h3>{props.text.about2}</h3>
+              <p>{props.text.about2}</p>
             </div>
           </div>
           <div className="about_item">
             <i className="fas fa-baby"></i>
             <div className="item_text">
-              <h3>{props.text.about3}</h3>
+              <p>{props.text.about3}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="hol_picture">
-        <img src={AboutImg} alt="house_of_light_about" />
-      </div>
+      <Table />
     </div>
   );
 };

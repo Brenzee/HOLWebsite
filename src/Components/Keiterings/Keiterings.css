@@ -1,17 +1,16 @@
 .bankets {
-  margin: 3rem 8rem;
+  margin: 3rem 5rem;
 }
 
 .bankets_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
+  grid-template-columns: 40% auto;
 }
 
 .image img {
   width: 100%;
   min-height: 70vh;
-  max-height: 95vh;
+  max-height: 85vh;
   object-fit: cover;
   border-radius: 25px;
   transition: all 0.1s ease-in;
@@ -25,6 +24,8 @@
 /* Visa teksta puse */
 .about_bankets {
   display: flex;
+  padding: 2rem 4rem;
+  padding-right: 0;
   flex-direction: column;
 }
 
@@ -55,17 +56,18 @@
 /* Katrs no banketa uzskaites punktiem */
 .bankets_item {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 14% auto;
   margin-bottom: 1rem;
 }
 
 .bankets_item .fas {
   color: #3abadf;
   font-size: 32px;
+  padding: 5px;
 }
 
 .bankets_text {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -84,6 +86,10 @@
   .bankets_grid {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+  }
+
+  .about_bankets {
+    padding-left: 0;
   }
 
   .image img {

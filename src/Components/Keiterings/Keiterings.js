@@ -39,9 +39,8 @@ const Keiterings = ({ text }) => {
               <i className="fas fa-address-card"></i>
               <div className="bankets_text">
                 <p>
-                  {text.banquet4}
+                  {text.banquet4}{" "}
                   <a className="blue" href="mailto:raitis@hol.lv">
-                    {" "}
                     {text.banquet_email}
                   </a>
                   .

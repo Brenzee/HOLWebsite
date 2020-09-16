@@ -1,23 +1,18 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0 3rem;
+  grid-template-columns: 60% auto;
+  margin: 0 3rem;
 }
 
 .hol_color {
   color: #3abadf;
 }
 
-/* Katrs Grida Elements */
-.about > div {
-  border-radius: 15px;
-  margin: 1rem 5rem;
-  z-index: 10;
-}
-
 /* Laipni lūgti HOL */
 .about_text {
   padding: 2rem 0rem;
+  margin: 1rem 2rem;
+  z-index: 10;
 }
 
 .about_items {
@@ -34,7 +29,7 @@
 
 .about_item {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 10% 90%;
   padding: 1rem 0;
   margin: 0;
 }
@@ -55,16 +50,12 @@
   font-weight: 500;
 }
 
-.item_text span {
-  color: #3abadf;
-  font-weight: 600;
-}
-
 div .hol_picture {
   /* background: url(../../img/About1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
+  margin: 1rem;
   display: flex;
   border: none;
   justify-content: center;

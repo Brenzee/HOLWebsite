@@ -14,9 +14,10 @@
 
 .reserve form {
   padding-top: 1rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
 }
 
 .reserve h1 {
@@ -57,7 +58,7 @@
   cursor: pointer;
   border: none;
   color: white;
-  width: 50%;
+  width: 400px;
   font-size: 24px;
   padding: 1rem;
   font-weight: 600;

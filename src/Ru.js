@@ -34,36 +34,36 @@ function Ru() {
         />
       </Helmet>
       <Header
-        about={contentLv.about}
-        brunch={contentLv.brunch}
-        menu="Menu"
-        banquet={contentLv.banquet}
-        contacts={contentLv.contacts}
-        welcome={contentLv.hero1}
-        reserve={contentLv.res_button}
+        about={contentRu.about}
+        brunch={contentRu.brunch}
+        menu="Меню"
+        banquet={contentRu.banquet}
+        contacts={contentRu.contacts}
+        welcome={contentRu.hero1}
+        reserve={contentRu.res_button}
         flag1={contentRu.flag1}
         flag2={contentRu.flag2}
       />
       <SocialMedia />
       <WhiteWave />
       <Suspense fallback={" "}>
-        <About text={contentLv} />
+        <About text={contentRu} />
       </Suspense>
       <Suspense fallback={" "}>
-        <Brunch text={contentLv} />
+        <Brunch text={contentRu} />
       </Suspense>
       <Suspense fallback={" "}>
-        <Keiterings text={contentLv} />
+        <Keiterings text={contentRu} />
       </Suspense>
       <Suspense fallback={" "}>
-        <Reservation text={contentLv} />
+        <Reservation text={contentRu} />
       </Suspense>
       <Suspense fallback={" "}>
         <Gallery />
       </Suspense>
       <WhiteWaveBottom />
       <Suspense fallback={" "}>
-        <Footer text={contentLv} />
+        <Footer text={contentRu} />
       </Suspense>
     </div>
   );

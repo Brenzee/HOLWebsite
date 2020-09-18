@@ -51,6 +51,7 @@ const Lv = () => {
         contacts={contentLv.contacts}
         welcome={contentLv.hero1}
         reserve={contentLv.res_button}
+        nav1={contentLv.nav1}
         flag1={contentLv.flag1}
         flag2={contentLv.flag2}
       />

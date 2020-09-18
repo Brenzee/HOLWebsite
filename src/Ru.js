@@ -40,6 +40,7 @@ function Ru() {
         banquet={contentRu.banquet}
         contacts={contentRu.contacts}
         welcome={contentRu.hero1}
+        nav1={contentRu.nav1}
         reserve={contentRu.res_button}
         flag1={contentRu.flag1}
         flag2={contentRu.flag2}

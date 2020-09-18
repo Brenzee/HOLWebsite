@@ -44,7 +44,7 @@ class Header extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Menu
+                  {this.props.nav1}
                 </a>
               </li>
               <li className="nav_item">

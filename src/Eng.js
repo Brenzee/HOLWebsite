@@ -49,6 +49,7 @@ const Eng = () => {
         banquet={contentEng.banquet}
         contacts={contentEng.contacts}
         welcome={contentEng.hero1}
+        nav1={contentEng.nav1}
         reserve={contentEng.res_button}
         flag1={contentEng.flag1}
         flag2={contentEng.flag2}

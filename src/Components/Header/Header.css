@@ -168,7 +168,7 @@ li {
   }
 
   .hero h1 {
-    font-size: 56px;
+    font-size: 48px;
     padding-bottom: 1rem;
   }
 
@@ -176,9 +176,9 @@ li {
     font-size: 32px;
   }
 
-  .hero a {
-    font-size: 18px;
-    padding: 1.5rem;
+  .hero button {
+    font-size: 22px;
+    padding: 1.3rem;
   }
 
   /* Nav List */

@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Keiterings.css";
 import Bankets_img from "../../img/Keiterings.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Keiterings = ({ text }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className="bankets" id="keiterings">
+    <div
+      data-aos="fade-up"
+      data-aos-once="true"
+      className="bankets"
+      id="keiterings"
+    >
       <div className="bankets_grid">
         <div className="image">
           <img src={Bankets_img} alt="house_of_light_bankets" />

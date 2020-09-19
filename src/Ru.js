@@ -11,7 +11,6 @@ import Reservation from "./Components/Reservation/Reservation";
 import Gallery from "./Components/Gallery/Gallery";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
-import contentLv from "./content/contentLv";
 import contentRu from "./content/contentRu";
 
 import { Helmet } from "react-helmet";

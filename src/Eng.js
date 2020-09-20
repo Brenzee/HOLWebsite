@@ -12,7 +12,6 @@ import Gallery from "./Components/Gallery/Gallery";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentEng from "./content/contentEng";
-import Logo from "./img/logo.png";
 
 import { Helmet } from "react-helmet";
 
@@ -21,25 +20,42 @@ const Eng = () => {
     <div>
       <Helmet>
         <html lang="en" amp />
-        <title>Grill Bar House of Light - Restaurant in Jurmala</title>
-        <meta property="og:locale" content="en_LV" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Restaurant House of Light" />
-        <meta property="og:image" content={Logo} />
-        <meta property="og:url" content="https://www.hol.lv/eng" />
-        <meta property="og:title" content="Grill Bar House of Light" />
-        <meta
-          property="og:description"
-          content="House of Light - Grill Bar restaurant in Jurmala. Grill Bar on Jomas street, loved for sunday brunches and wonderful food"
-        />
 
+        {/* <!-- Primary Meta Tags --> */}
+        <title>Grillbar Restaurant House of Light Jurmala</title>
         <meta
-          name="keywords"
-          content="restaurant in jurmala, restaurant, restaurant jomas iela, restaurant jomas street, brunch jurmala, sunday brunch"
+          name="title"
+          content="Grillbar Restaurant House of Light Jurmala"
         />
         <meta
           name="description"
-          content="House of Light - Grill Bar restaurant in Jurmala."
+          content="Restaurant grill bar in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well."
+        />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://houseoflightwebsite.netlify.app/"
+        />
+        <meta
+          property="og:title"
+          content="Grillbar Restaurant House of Light Jurmala"
+        />
+        <meta
+          property="og:description"
+          content="Restaurant grill bar in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well."
+        />
+        <meta
+          property="og:image"
+          content="https://scontent.frix6-1.fna.fbcdn.net/v/t1.0-9/110657866_3138264479601583_9222930105883202650_o.jpg?_nc_cat=103&_nc_sid=e3f864&_nc_ohc=80VmuddOsLAAX_qVFjC&_nc_ht=scontent.frix6-1.fna&oh=e996cc624ac8e08f87f00cad4fece21c&oe=5F8D08BB"
+        />
+
+        {/* <!-- Twitter --> */}
+
+        <meta
+          name="keywords"
+          content="restaurant jurmala, restauran, restaurant jomas street, brunch jurmala"
         />
       </Helmet>
       <Header

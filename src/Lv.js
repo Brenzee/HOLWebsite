@@ -8,7 +8,7 @@ import WhiteWave from "./Components/White Wave/WhiteWave";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
-import Logo from "./img/logo.png";
+import HeadImage from "./img/About1.png";
 
 import { Helmet } from "react-helmet";
 
@@ -23,23 +23,50 @@ const Lv = () => {
     <div>
       <Helmet>
         <title>Grilbārs House of Light - Restorāns Jūrmalas sirdī</title>
-        <meta property="og:locale" content="lv_LV" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Restorāns House of Light" />
-        <meta property="og:image" content={Logo} />
-        <meta property="og:url" content="https://www.hol.lv" />
-        <meta property="og:title" content="Grilbārs House of Light" />
+        <meta
+          property="og:url"
+          content="https://houseoflightwebsite.netlify.app/"
+        />
+        <meta
+          property="og:title"
+          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+        />
+        <meta
+          property="og:description"
+          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
+        />
+        <meta property="og:image" content={HeadImage} />
         <meta
           property="og:description"
           content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem"
         />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://houseoflightwebsite.netlify.app/"
+        />
+        <meta
+          property="twitter:title"
+          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+        />
+        <meta
+          property="twitter:description"
+          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
+        />
+        <meta property="twitter:image" content={HeadImage} />
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
         />
+        <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
+        <meta
+          name="title"
+          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+        />
         <meta
           name="description"
-          content="House of Light - Grilbāra restorāns Jūrmalas sirdī. Grilbārs uz Jomas ielas, iemīļots ar svētdienas brančiem un ēdieniem."
+          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
         />
       </Helmet>
 

@@ -8,7 +8,7 @@ import WhiteWave from "./Components/White Wave/WhiteWave";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
-import HeadImage from "./img/About1.png";
+import HeadImage from "./img/About1.jpg";
 
 import { Helmet } from "react-helmet";
 

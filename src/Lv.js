@@ -20,7 +20,7 @@ const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 const Lv = () => {
   return (
     <div>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "lv_LV" }}>
         {/* <!-- Primary Meta Tags --> */}
         <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
         <meta

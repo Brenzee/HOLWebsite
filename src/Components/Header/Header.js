@@ -3,6 +3,8 @@ import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 //Components
 import RussianFlag from "../../img/russian.png";
@@ -21,6 +23,10 @@ class Header extends Component {
     this.setState({
       isButtonActive: !this.state.isButtonActive,
     });
+  }
+
+  componentDidMount() {
+    Aos.init({ duration: 1700 });
   }
 
   render() {
@@ -108,10 +114,20 @@ class Header extends Component {
             </div>
           </div>
           <div className="hero">
-            <h1>{this.props.welcome}</h1>
-            <h2>House of Light</h2>
+            <h1 data-aos="fade-up" data-aos-once="true">
+              {this.props.welcome}
+            </h1>
+            <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+              House of Light
+            </h2>
             <ScrollIntoView selector="#reserve">
-              <button>{this.props.reserve}</button>
+              <button
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="600"
+              >
+                {this.props.reserve}
+              </button>
             </ScrollIntoView>
           </div>
         </div>

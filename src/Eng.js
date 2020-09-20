@@ -19,8 +19,11 @@ const Eng = () => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
-
+        <html amp lang="en" />
+        <link
+          rel="canonical"
+          href="https://houseoflightwebsite.netlify.app/eng"
+        ></link>
         {/* <!-- Primary Meta Tags --> */}
         <title>Grillbar Restaurant House of Light Jurmala</title>
         <meta

@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 function Ru() {
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: "ru_LV" }}>
+      <Helmet htmlAttributes={{ lang: "lv_ru" }}>
         <title>Grilbārs House of Light - Restorāns Jūrmalas sirdī</title>
         <meta property="og:locale" content="ru_LV" />
         <meta property="og:type" content="website" />

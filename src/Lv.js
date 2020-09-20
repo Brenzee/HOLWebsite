@@ -8,7 +8,6 @@ import WhiteWave from "./Components/White Wave/WhiteWave";
 import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
 import Footer from "./Components/Footer/Footer";
 import contentLv from "./content/contentLv";
-import HeadImage from "./img/About1.jpg";
 
 import { Helmet } from "react-helmet";
 
@@ -47,7 +46,10 @@ const Lv = () => {
           property="og:description"
           content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
         />
-        <meta property="og:image" content={HeadImage} />
+        <meta
+          property="og:image"
+          content="https://www.facebook.com/houseoflightgrilbars/photos/a.287262218035171/3138264476268250"
+        />
 
         {/* <!-- Twitter --> */}
 

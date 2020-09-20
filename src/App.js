@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/eng" exact component={Eng} />
         <Route path="/" exact component={Lv} />
         <Route
+          path="*"
           render={({ staticContext }) => {
             if (staticContext) {
               staticContext.statusCode = 404;

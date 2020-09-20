@@ -57,6 +57,10 @@ const Lv = () => {
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
         />
+        <meta
+          name="google-site-verification"
+          content="yznIW8INP9WSs47VWRNUP3PAxIUeCS_kWFJ3gn1qfp8"
+        />
       </Helmet>
 
       <Header

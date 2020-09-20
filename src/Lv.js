@@ -22,7 +22,15 @@ const Lv = () => {
   return (
     <div>
       <Helmet>
-        <title>Grilbārs House of Light - Restorāns Jūrmalas sirdī</title>
+        <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
+        <meta
+          name="title"
+          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+        />
+        <meta
+          name="description"
+          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
@@ -58,15 +66,6 @@ const Lv = () => {
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
-        />
-        <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
-        <meta
-          name="title"
-          content="Grilbārs Restorāns House Of Light  Jūrmalā"
-        />
-        <meta
-          name="description"
-          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
         />
       </Helmet>
 

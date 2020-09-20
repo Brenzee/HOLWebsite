@@ -19,7 +19,7 @@ const Eng = () => {
   return (
     <div>
       <Helmet>
-        <html amp lang="en" />
+        <html lang="en" />
 
         {/* <!-- Primary Meta Tags --> */}
         <title>Grillbar Restaurant House of Light Jurmala</title>

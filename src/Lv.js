@@ -26,7 +26,7 @@ const Lv = () => {
         <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
         <meta
           name="title"
-          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+          content="Grilbārs Restorāns House Of Light Jūrmalā"
         />
         <meta
           name="description"
@@ -41,13 +41,13 @@ const Lv = () => {
         />
         <meta
           property="og:title"
-          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+          content="Grilbārs Restorāns House Of Light Jūrmalā"
         />
         <meta
           property="og:description"
           content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content={HeadImage} />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -57,13 +57,13 @@ const Lv = () => {
         />
         <meta
           property="twitter:title"
-          content="Grilbārs Restorāns House Of Light  Jūrmalā"
+          content="Grilbārs Restorāns House Of Light Jūrmalā"
         />
         <meta
           property="twitter:description"
           content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
         />
-        <meta property="twitter:image" content="" />
+        <meta property="twitter:image" content={HeadImage} />
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"

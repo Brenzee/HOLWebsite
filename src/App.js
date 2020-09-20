@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Link } from "react-router-dom";
 import "./App.css";
 
 //Each language page
@@ -14,6 +14,19 @@ const App = () => {
         <Route path="/ru" exact component={Ru} />
         <Route path="/eng" exact component={Eng} />
         <Route path="/" exact component={Lv} />
+        <Route
+          render={({ staticContext }) => {
+            if (staticContext) {
+              staticContext.statusCode = 404;
+            }
+            return (
+              <div>
+                <h2>Page is not found</h2>
+                <Link to="/">Go back to home page</Link>
+              </div>
+            );
+          }}
+        />
       </BrowserRouter>
     </div>
   );

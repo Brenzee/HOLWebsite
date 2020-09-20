@@ -48,7 +48,7 @@ const Lv = () => {
         />
         <meta
           property="og:image"
-          content="https://www.facebook.com/houseoflightgrilbars/photos/a.287262218035171/3138264476268250"
+          content="https://scontent.frix6-1.fna.fbcdn.net/v/t1.0-9/110657866_3138264479601583_9222930105883202650_o.jpg?_nc_cat=103&_nc_sid=e3f864&_nc_ohc=80VmuddOsLAAX_qVFjC&_nc_ht=scontent.frix6-1.fna&oh=e996cc624ac8e08f87f00cad4fece21c&oe=5F8D08BB"
         />
 
         {/* <!-- Twitter --> */}

@@ -50,20 +50,7 @@ const Lv = () => {
         <meta property="og:image" content={HeadImage} />
 
         {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://houseoflightwebsite.netlify.app/"
-        />
-        <meta
-          property="twitter:title"
-          content="Grilbārs Restorāns House Of Light Jūrmalā"
-        />
-        <meta
-          property="twitter:description"
-          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
-        />
-        <meta property="twitter:image" content={HeadImage} />
+
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"

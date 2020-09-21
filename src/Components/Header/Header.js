@@ -114,17 +114,17 @@ class Header extends Component {
             </div>
           </div>
           <div className="hero">
-            <h1 data-aos="fade-up" data-aos-once="true">
+            <h1 data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
               {this.props.welcome}
             </h1>
-            <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+            <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="650">
               House of Light
             </h2>
             <ScrollIntoView selector="#reserve">
               <button
                 data-aos="fade-up"
                 data-aos-once="true"
-                data-aos-delay="600"
+                data-aos-delay="950"
               >
                 {this.props.reserve}
               </button>

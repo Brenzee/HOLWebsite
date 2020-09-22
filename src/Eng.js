@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 const Eng = () => {
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: "en_US" }}>
+      <Helmet htmlAttributes={{ lang: "en_LV" }}>
         <link
           rel="canonical"
           href="https://houseoflightwebsite.netlify.app/eng"

@@ -31,7 +31,7 @@ const Eng = () => {
         />
         <meta
           name="description"
-          content="Restaurant grill bar in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well."
+          content="Restaurant grill bar in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well. Restaurant House of Light in Jurmala."
         />
 
         {/* <!-- Open Graph / Facebook --> */}

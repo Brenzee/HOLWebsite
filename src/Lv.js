@@ -29,7 +29,7 @@ const Lv = () => {
         />
         <meta
           name="description"
-          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
+          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brunch. Restorāns House of Light Jūrmala."
         />
 
         {/* <!-- Open Graph / Facebook --> */}
@@ -51,15 +51,9 @@ const Lv = () => {
           content="https://scontent.frix6-1.fna.fbcdn.net/v/t1.0-9/110657866_3138264479601583_9222930105883202650_o.jpg?_nc_cat=103&_nc_sid=e3f864&_nc_ohc=80VmuddOsLAAX_qVFjC&_nc_ht=scontent.frix6-1.fna&oh=e996cc624ac8e08f87f00cad4fece21c&oe=5F8D08BB"
         />
 
-        {/* <!-- Twitter --> */}
-
         <meta
           name="keywords"
           content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
-        />
-        <meta
-          name="google-site-verification"
-          content="yznIW8INP9WSs47VWRNUP3PAxIUeCS_kWFJ3gn1qfp8"
         />
       </Helmet>
 

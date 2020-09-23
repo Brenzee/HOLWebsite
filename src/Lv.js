@@ -29,7 +29,7 @@ const Lv = () => {
         />
         <meta
           name="description"
-          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brunch. Restorāns House of Light Jūrmala."
+          content="Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Grilbārs ir zināms ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brunch. Restorāns House of Light Jūrmala."
         />
 
         {/* <!-- Open Graph / Facebook --> */}

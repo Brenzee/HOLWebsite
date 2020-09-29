@@ -134,10 +134,10 @@ class Header extends Component {
               <i className="fas fa-times"></i>
             </div>
           </div>
-          <AnimatePresence>
+          <AnimatePresence initial={false}>
             {this.state.isVisible && (
               <motion.div className="hero">
-                <motion.h2
+                <motion.h3
                   initial={{ opacity: 0, y: 150 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
@@ -148,8 +148,8 @@ class Header extends Component {
                   }}
                 >
                   {this.props.welcome}
-                </motion.h2>
-                <motion.h1
+                </motion.h3>
+                <motion.h2
                   initial={{ opacity: 0, y: 150 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
@@ -160,7 +160,7 @@ class Header extends Component {
                   }}
                 >
                   House of Light
-                </motion.h1>
+                </motion.h2>
                 <ScrollIntoView
                   selector="#reserve"
                   whileHover={{ scale: 1.04 }}

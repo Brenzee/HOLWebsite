@@ -22,7 +22,6 @@ const Lv = () => {
     <div>
       <Helmet htmlAttributes={{ lang: "lv" }}>
         <link rel="canonical" href="https://new.hol.lv"></link>
-        {/* <!-- Primary Meta Tags --> */}
         <title>Restorāns Grilbārs House of Light | Restorāns Jūrmalā</title>
         <meta
           name="title"
@@ -97,7 +96,9 @@ const Lv = () => {
       <Suspense fallback={" "}>
         <Gallery />
       </Suspense>
-      <WhiteWaveBottom />
+      <Suspense fallback={" "}>
+        <WhiteWaveBottom />
+      </Suspense>
       <Suspense fallback={" "}>
         <Footer text={contentLv} />
       </Suspense>

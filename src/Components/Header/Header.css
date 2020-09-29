@@ -98,11 +98,11 @@ li {
   padding-bottom: 2rem;
 }
 
-.hero h2 {
+.hero h3 {
   font-size: 72px;
 }
 
-.hero h1 {
+.hero h2 {
   font-size: 42px;
   margin-bottom: 2rem;
 }
@@ -168,7 +168,7 @@ li {
     margin-bottom: 1rem;
   }
 
-  .hero h1 {
+  .hero h3 {
     font-size: 48px;
     padding-bottom: 1rem;
   }

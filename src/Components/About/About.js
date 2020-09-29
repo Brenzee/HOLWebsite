@@ -6,7 +6,7 @@ const About = (props) => {
   return (
     <div className="about grid" id="about">
       <div className="about_text" id="about">
-        <h2 className="about_title">{props.text.about_title}</h2>
+        <h1 className="about_title">{props.text.about_title}</h1>
         <div className="about_items">
           <div className="about_item">
             <i className="fas fa-utensils"></i>

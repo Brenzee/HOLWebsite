@@ -93,7 +93,9 @@ function Ru() {
       <Suspense fallback={" "}>
         <Gallery />
       </Suspense>
-      <WhiteWaveBottom />
+      <Suspense fallback={" "}>
+        <WhiteWaveBottom />
+      </Suspense>
       <Suspense fallback={" "}>
         <Footer text={contentRu} />
       </Suspense>

@@ -98,7 +98,9 @@ const Eng = () => {
       <Suspense fallback={" "}>
         <Gallery />
       </Suspense>
-      <WhiteWaveBottom />
+      <Suspense fallback={" "}>
+        <WhiteWaveBottom />
+      </Suspense>
       <Suspense fallback={" "}>
         <Footer text={contentEng} />
       </Suspense>

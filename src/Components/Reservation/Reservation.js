@@ -31,7 +31,7 @@ function Reservation(props) {
     <div className="reserve" id="reserve">
       {done && <Redirect to="/success" />}
       <div className="reserve_title">
-        <h1>{props.text.reserve_title}</h1>
+        <h2>{props.text.reserve_title}</h2>
       </div>
       <form name="reservation" onSubmit={sendEmail}>
         <input type="hidden" name="form-name" value="reservation" />

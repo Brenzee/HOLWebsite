@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 //Each language page
@@ -12,10 +12,12 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Route path="/ru" component={Ru} />
-        <Route path="/eng" component={Eng} />
-        <Route path="/success" component={Thanks} />
-        <Route path="/" exact component={Lv} />
+        <Switch>
+          <Route path="/ru" component={Ru} />
+          <Route path="/eng" component={Eng} />
+          <Route path="/success" component={Thanks} />
+          <Route path="/" exact component={Lv} />
+        </Switch>
       </BrowserRouter>
     </div>
   );

@@ -11,10 +11,10 @@ const Keiterings = ({ text }) => {
         </div>
         <div className="about_bankets">
           <div className="bankets_title">
-            <h1>{text.banquet_title}</h1>
+            <h2>{text.banquet_title}</h2>
           </div>
           <div className="bankets_subtitle">
-            <h2>{text.banquet_subtitle}</h2>
+            <h3>{text.banquet_subtitle}</h3>
           </div>
           <div className="bankets_items">
             <div className="bankets_item">

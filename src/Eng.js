@@ -19,34 +19,30 @@ const Eng = () => {
   return (
     <div>
       <Helmet htmlAttributes={{ lang: "en_LV" }}>
-        <link
-          rel="canonical"
-          href="https://houseoflightwebsite.netlify.app/eng"
-        ></link>
+        <link rel="canonical" href="https://new.hol.lv/eng"></link>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Grillbar Restaurant House of Light Jurmala</title>
+        <title>
+          Restaurant Grillbar House of Light | Restaurant in Jurmala
+        </title>
         <meta
           name="title"
-          content="Grillbar Restaurant House of Light Jurmala"
+          content="Restaurant Grillbar House of Light | Restaurant in Jurmala"
         />
         <meta
           name="description"
-          content="Restaurant grill bar House of Light in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well. Restaurant House of Light in Jurmala."
+          content="Restaurant grill bar House of Light Jurmala, Jomas street. Great place for sunday brunch in Jurmala. House of Light restaurant Jurmala."
         />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://houseoflightwebsite.netlify.app/"
-        />
+        <meta property="og:url" content="https://new.hol.lv/eng" />
         <meta
           property="og:title"
-          content="Grillbar Restaurant House of Light Jurmala"
+          content="Restaurant Grillbar House of Light | Restaurant in Jurmala"
         />
         <meta
           property="og:description"
-          content="Restaurant grill bar in the heart of Jurmala, Jomas street. Grill bar is widely known not only from amazing food, but from rich brunches as well."
+          content="Restaurant grill bar House of Light Jurmala, Jomas street. Great place for sunday brunch in Jurmala. House of Light restaurant Jurmala."
         />
         <meta
           property="og:image"
@@ -57,8 +53,20 @@ const Eng = () => {
 
         <meta
           name="keywords"
-          content="restaurant jurmala, restauran, restaurant jomas street, brunch jurmala"
+          content="restaurant jurmala, restaurant, restaurant jomas street, brunch jurmala, sunday brunch jurmala, best restaurant in jurmala, best restaurant on jomas street"
         />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://new.hol.lv/eng" />
+        <meta
+          property="twitter:title"
+          content="Restaurant Grillbar House of Light | Restaurant in Jurmala"
+        />
+        <meta
+          property="twitter:description"
+          content="Restaurant grill bar House of Light Jurmala, Jomas street. Great place for sunday brunch in Jurmala. House of Light restaurant Jurmala."
+        />
+        <meta property="twitter:image" content="%PUBLIC_URL%/About1.jpg" />
       </Helmet>
       <Header
         about={contentEng.about}

@@ -20,31 +20,29 @@ const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 const Lv = () => {
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: "lv_LV" }}>
+      <Helmet htmlAttributes={{ lang: "lv" }}>
+        <link rel="canonical" href="https://new.hol.lv"></link>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Grilbārs Restorāns House Of Light Jūrmalā</title>
+        <title>Restorāns Grilbārs House of Light | Restorāns Jūrmalā</title>
         <meta
           name="title"
-          content="Grilbārs Restorāns House Of Light Jūrmalā"
+          content="Restorāns Grilbārs House of Light | Restorāns Jūrmalā"
         />
         <meta
           name="description"
-          content="Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Grilbārs ir zināms ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brunch. Restorāns House of Light Jūrmala."
+          content="Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā."
         />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://houseoflightwebsite.netlify.app/"
-        />
+        <meta property="og:url" content="https://new.hol.lv/" />
         <meta
           property="og:title"
-          content="Grilbārs Restorāns House Of Light Jūrmalā"
+          content="Restorāns Grilbārs House of Light | Restorāns Jūrmalā"
         />
         <meta
           property="og:description"
-          content="Restorāns grilbārs Jūrmalas sirdī Jomas ielā. Grilbārs ir pazīstams ne tikai no izsmalcinātajiem ēdieniem, bet arī no bagātajiem svētdienas brančiem."
+          content="Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā."
         />
         <meta
           property="og:image"
@@ -53,8 +51,20 @@ const Lv = () => {
 
         <meta
           name="keywords"
-          content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā"
+          content="restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā, svētdienas brunch, svētdienas brunch jūrmalā"
         />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://new.hol.lv/" />
+        <meta
+          property="twitter:title"
+          content="Restorāns Grilbārs House of Light | Restorāns Jūrmalā"
+        />
+        <meta
+          property="twitter:description"
+          content="Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā."
+        />
+        <meta property="twitter:image" content="%PUBLIC_URL%/About1.jpg" />
       </Helmet>
 
       <Header

@@ -26,11 +26,11 @@ const Footer = ({ text }) => {
       </div>
       <div className="working_hours">
         <div className="working_title">
-          <h1>{text.working_hours}</h1>
+          <h2>{text.working_hours}</h2>
         </div>
         <div className="day">
-          <h2>{text.work_days}</h2>
-          <h3>12:00 - 23:00</h3>
+          <h3>{text.work_days}</h3>
+          <h4>12:00 - 23:00</h4>
         </div>
         <div className="rights">
           <h4>{text.rights}</h4>

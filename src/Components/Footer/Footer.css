@@ -57,6 +57,10 @@
 }
 
 .day h3 {
+  margin: 0;
+}
+
+.day h4 {
   padding-left: 1rem;
   font-size: 18px;
 }

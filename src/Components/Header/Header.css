@@ -104,6 +104,7 @@ li {
 
 .hero h2 {
   font-size: 42px;
+  margin-bottom: 2rem;
 }
 
 .hero button {
@@ -112,7 +113,7 @@ li {
   font-weight: 600;
   padding: 1.5rem 3rem;
   background-color: #3abadf;
-  margin-top: 2rem;
+
   border-radius: 25px;
   font-size: 24px;
   transition: all 0.1s ease-out;

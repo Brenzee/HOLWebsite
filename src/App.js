@@ -14,20 +14,6 @@ const App = () => {
         <Route path="/ru" exact component={Ru} />
         <Route path="/eng" exact component={Eng} />
         <Route path="/" exact component={Lv} />
-        <Route
-          path="/404"
-          render={({ staticContext }) => {
-            if (staticContext) {
-              staticContext.statusCode = 404;
-            }
-            return (
-              <div>
-                <h2>Page is not found</h2>
-                <Link to="/">Go back to home page</Link>
-              </div>
-            );
-          }}
-        />
       </BrowserRouter>
     </div>
   );

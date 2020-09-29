@@ -3,14 +3,18 @@ import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
 import { Link } from "react-router-dom";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 //Components
 import RussianFlag from "../../img/russian.png";
 import EnglishFlag from "../../img/english.png";
 import LatvianFlag from "../../img/latvian.png";
 import Logo from "../../img/logo.png";
+
+const variants = {
+  onHover: { x: 200 },
+  initial: { x: 0 },
+};
 
 class Header extends Component {
   constructor() {
@@ -25,10 +29,6 @@ class Header extends Component {
     });
   }
 
-  componentDidMount() {
-    Aos.init({ duration: 1700 });
-  }
-
   render() {
     return (
       <div className="hero_back">
@@ -37,14 +37,18 @@ class Header extends Component {
             <div className="logo">
               <img src={Logo} alt="House of light restaurant" />
             </div>
-            <ul
+            <motion.ul
               className={
                 this.state.isButtonActive
                   ? "nav_list nav_list_active"
                   : "nav_list"
               }
             >
-              <li className="nav_item">
+              <motion.li
+                initital={{ y: 0 }}
+                whileHover={{ y: -5 }}
+                className="nav_item"
+              >
                 <a
                   href="https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal"
                   target="_blank"
@@ -52,27 +56,43 @@ class Header extends Component {
                 >
                   {this.props.nav1}
                 </a>
-              </li>
-              <li className="nav_item">
+              </motion.li>
+              <motion.li
+                initital={{ y: 0 }}
+                whileHover={{ y: -5 }}
+                className="nav_item"
+              >
                 <ScrollIntoView selector="#about">
                   <button onClick={this.onClick}>{this.props.about}</button>
                 </ScrollIntoView>
-              </li>
-              <li className="nav_item">
+              </motion.li>
+              <motion.li
+                initital={{ y: 0 }}
+                whileHover={{ y: -5 }}
+                className="nav_item"
+              >
                 <ScrollIntoView selector="#brunch">
                   <button onClick={this.onClick}>{this.props.brunch}</button>
                 </ScrollIntoView>
-              </li>
-              <li className="nav_item">
+              </motion.li>
+              <motion.li
+                initital={{ y: 0 }}
+                whileHover={{ y: -5 }}
+                className="nav_item"
+              >
                 <ScrollIntoView selector="#keiterings">
                   <button onClick={this.onClick}>{this.props.banquet}</button>
                 </ScrollIntoView>
-              </li>
-              <li className="nav_item">
+              </motion.li>
+              <motion.li
+                initital={{ y: 0 }}
+                whileHover={{ y: -5 }}
+                className="nav_item"
+              >
                 <ScrollIntoView selector="#footer">
                   <button onClick={this.onClick}>{this.props.contacts}</button>
                 </ScrollIntoView>
-              </li>
+              </motion.li>
               <li className="nav_item flags">
                 <Link
                   className="russian_flag flag"
@@ -99,7 +119,7 @@ class Header extends Component {
                   />
                 </Link>
               </li>
-            </ul>
+            </motion.ul>
             <div
               className={this.state.isButtonActive ? "burger hide " : "burger"}
               onClick={this.onClick}
@@ -113,23 +133,49 @@ class Header extends Component {
               <i className="fas fa-times"></i>
             </div>
           </div>
-          <div className="hero">
-            <h1 data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
+          <motion.div className="hero">
+            <motion.h1
+              initial={{ opacity: 0, y: 150 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.3,
+                duration: 2.2,
+                type: "spring",
+                bounce: 0.4,
+              }}
+            >
               {this.props.welcome}
-            </h1>
-            <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="650">
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0, y: 150 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.5,
+                duration: 2.2,
+                type: "spring",
+                bounce: 0.4,
+              }}
+            >
               House of Light
-            </h2>
-            <ScrollIntoView selector="#reserve">
-              <button
-                data-aos="fade-up"
-                data-aos-once="true"
-                data-aos-delay="950"
+            </motion.h2>
+            <motion.ScrollIntoView
+              selector="#reserve"
+              whileHover={{ scale: 1.04 }}
+            >
+              <motion.button
+                initial={{ opacity: 0, y: 150 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.7,
+                  duration: 2.2,
+                  type: "spring",
+                  bounce: 0.4,
+                }}
               >
                 {this.props.reserve}
-              </button>
-            </ScrollIntoView>
-          </div>
+              </motion.button>
+            </motion.ScrollIntoView>
+          </motion.div>
         </div>
       </div>
     );

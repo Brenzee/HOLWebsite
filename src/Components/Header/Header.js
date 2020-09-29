@@ -3,7 +3,7 @@ import "./Header.css";
 import { Component } from "react";
 import ScrollIntoView from "react-scroll-into-view";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 //Components
 import RussianFlag from "../../img/russian.png";
@@ -11,21 +11,22 @@ import EnglishFlag from "../../img/english.png";
 import LatvianFlag from "../../img/latvian.png";
 import Logo from "../../img/logo.png";
 
-const variants = {
-  onHover: { x: 200 },
-  initial: { x: 0 },
-};
-
 class Header extends Component {
   constructor() {
     super();
-    this.state = { isButtonActive: false };
+    this.state = { isButtonActive: false, isVisible: false };
     this.onClick = this.onClick.bind(this);
   }
 
   onClick() {
     this.setState({
       isButtonActive: !this.state.isButtonActive,
+    });
+  }
+
+  componentDidMount() {
+    this.setState({
+      isVisible: true,
     });
   }
 
@@ -133,49 +134,53 @@ class Header extends Component {
               <i className="fas fa-times"></i>
             </div>
           </div>
-          <motion.div className="hero">
-            <motion.h1
-              initial={{ opacity: 0, y: 150 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 2.2,
-                type: "spring",
-                bounce: 0.4,
-              }}
-            >
-              {this.props.welcome}
-            </motion.h1>
-            <motion.h2
-              initial={{ opacity: 0, y: 150 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.5,
-                duration: 2.2,
-                type: "spring",
-                bounce: 0.4,
-              }}
-            >
-              House of Light
-            </motion.h2>
-            <motion.ScrollIntoView
-              selector="#reserve"
-              whileHover={{ scale: 1.04 }}
-            >
-              <motion.button
-                initial={{ opacity: 0, y: 150 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: 0.7,
-                  duration: 2.2,
-                  type: "spring",
-                  bounce: 0.4,
-                }}
-              >
-                {this.props.reserve}
-              </motion.button>
-            </motion.ScrollIntoView>
-          </motion.div>
+          <AnimatePresence>
+            {this.state.isVisible && (
+              <motion.div className="hero">
+                <motion.h1
+                  initial={{ opacity: 0, y: 150 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.3,
+                    duration: 2.2,
+                    type: "spring",
+                    bounce: 0.4,
+                  }}
+                >
+                  {this.props.welcome}
+                </motion.h1>
+                <motion.h2
+                  initial={{ opacity: 0, y: 150 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 2.2,
+                    type: "spring",
+                    bounce: 0.4,
+                  }}
+                >
+                  House of Light
+                </motion.h2>
+                <ScrollIntoView
+                  selector="#reserve"
+                  whileHover={{ scale: 1.04 }}
+                >
+                  <motion.button
+                    initial={{ opacity: 0, y: 150 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: 0.7,
+                      duration: 2.2,
+                      type: "spring",
+                      bounce: 0.4,
+                    }}
+                  >
+                    {this.props.reserve}
+                  </motion.button>
+                </ScrollIntoView>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     );

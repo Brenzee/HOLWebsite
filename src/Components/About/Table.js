@@ -10,7 +10,7 @@ function Table() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g id="undraw_special_event_4aj8 1" clip-path="url(#clip0)">
+        <g id="undraw_special_event_4aj8 1" clipPath="url(#clip0)">
           <g id="lights">
             <path
               id="Vector"

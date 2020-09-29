@@ -1,0 +1,18 @@
+.thanks {
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #3abadf;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -31,27 +31,35 @@
 }
 
 .reserve form label {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-weight: 600;
   padding-left: 1rem;
 }
 
-.reserve form input {
+.reserve form input,
+.reserve form textarea {
   border: none;
   border-bottom: 1px solid white;
-  font-size: 18px;
+  font-size: 16px;
   padding: 7px;
   margin-bottom: 1rem;
   padding-left: 1rem;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  border: 1px solid #3abadf;
-  border-radius: 25px;
+  border-bottom: 1px solid #3abadf;
 }
 
-.reserve form input:focus {
+.reserve form textarea {
+  border: 1px solid #3abadf;
+  padding: 10px;
+  border-radius: 5px;
+  height: 80px;
+}
+
+.reserve form input:focus,
+.reserve form textarea:focus {
   outline: none;
-  border-bottom: 3px solid #3abadf;
+  background: rgba(58, 186, 223, 0.05);
   width: 100%;
 }
 
@@ -102,17 +110,22 @@
     min-width: 0;
   }
 
-  .reserve form input {
+  .reserve form input,
+  .reserve form textarea {
     margin: 0.5rem 0rem;
-    border: 1px solid #3abadf;
-    border-radius: 25px;
+    border-bottom: 1px solid #3abadf;
     padding: 0.5rem 1rem;
-    font-size: 16px;
+    font-size: 14px;
     background-color: white;
   }
 
+  .reserve form textarea {
+    border: 1px solid #3abadf;
+    border-radius: 5px;
+  }
+
   .reserve form label {
-    margin-top: 0.5rem;
+    margin-top: 16px;
   }
 
   .reserve {

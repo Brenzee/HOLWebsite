@@ -10,8 +10,7 @@
 
 .image img {
   width: 100%;
-  min-height: 70vh;
-  max-height: 85vh;
+  max-height: 550px;
   object-fit: cover;
   border-radius: 25px;
   transition: all 0.1s ease-in;
@@ -96,14 +95,15 @@
 
   .image img {
     min-height: 0;
-    height: 30vh;
+    max-height: 280px;
+    object-position: 0 75%;
   }
 
-  .bankets_title h1 {
+  .bankets_title h2 {
     font-size: 32px;
   }
 
-  .bankets_subtitle h2 {
+  .bankets_subtitle h3 {
     font-size: 28px;
   }
 

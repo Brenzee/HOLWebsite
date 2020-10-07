@@ -1,6 +1,6 @@
-import React from "react";
-import "./WhiteWave.css";
-import { motion } from "framer-motion";
+import React from 'react'
+import './WhiteWave.css'
+import { motion } from 'framer-motion'
 
 const WhiteWave = () => {
   return (
@@ -8,14 +8,14 @@ const WhiteWave = () => {
       initial={{ scaleY: 1, y: 1 }}
       animate={{ scaleY: 1.15 }}
       transition={{
-        ease: "easeInOut",
+        ease: 'linear',
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         duration: 1,
       }}
-      className="white_wave"
+      className='white_wave'
     ></motion.div>
-  );
-};
+  )
+}
 
-export default WhiteWave;
+export default WhiteWave

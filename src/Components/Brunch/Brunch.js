@@ -1,14 +1,30 @@
 import React from 'react'
 import './Brunch.css'
+import BrunchImg from '../../img/Brunch.jpg'
 
 const Brunch = ({ text }) => {
+  const { brunch_list, brunch_title } = text
+  console.log(brunch_list)
+
   return (
     <div className='brunch' id='brunch'>
-      <h2 className='about_title_brunch'>{text.brunch_title}</h2>
-      <div className='brunch_about item_text'>
-        <p>{text.brunch_about}</p>
+      <h2 className='about_title_brunch'>{brunch_title}</h2>
+      <div className='brunch_container'>
+        <div className='brunch_about item_text'>
+          <p>{text.brunch_about}</p>
+          <ul>
+            {brunch_list.map((item) => (
+              <li key={item}>
+                <i class='fas fa-angle-right brunch_i'></i>
+                <p>{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className='brunch_list item_text'>
+          <img className='brunch_img' src={BrunchImg} alt='' width='100%' />
+        </div>
       </div>
-      <div className='social_media_brunch'></div>
     </div>
   )
 }

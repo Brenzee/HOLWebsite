@@ -12,20 +12,18 @@ import theme from './theme'
 
 const App = () => {
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <div>
-          <BrowserRouter>
-            <Switch>
-              <Route path='/ru' component={Ru} />
-              <Route path='/eng' component={Eng} />
-              <Route path='/success' component={Thanks} />
-              <Route path='/' exact component={Lv} />
-            </Switch>
-          </BrowserRouter>
-        </div>
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <div>
+        <BrowserRouter>
+          <Switch>
+            <Route path='/ru' component={Ru} />
+            <Route path='/en' component={Eng} />
+            <Route path='/success' component={Thanks} />
+            <Route path='/' exact component={Lv} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   )
 }
 

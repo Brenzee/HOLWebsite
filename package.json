@@ -7,19 +7,25 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "ajv": "^6.12.5",
     "aos": "^3.0.0-beta.6",
     "emailjs-com": "^2.6.3",
+    "fibers": "^5.0.0",
     "framer-motion": "^2.7.6",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-phone-number-input": "^3.0.25",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^3.4.3",
     "react-scroll-into-view": "^1.8.2",
     "react-snap": "^1.23.0",
-    "serve": "^11.3.2"
+    "sass": "^1.26.12",
+    "serve": "^11.3.2",
+    "typescript": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,10 +36,11 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "fixWebpackChunksIssue": false
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "fixWebpackChunksIssue": false,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "browserslist": {
     "production": [

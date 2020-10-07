@@ -1,59 +1,59 @@
-import React from "react";
-import "./Header.css";
-import { Component } from "react";
-import ScrollIntoView from "react-scroll-into-view";
-import { Link } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import React from 'react'
+import './Header.css'
+import { Component } from 'react'
+import ScrollIntoView from 'react-scroll-into-view'
+import { Link } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 
 //Components
-import RussianFlag from "../../img/russian.png";
-import EnglishFlag from "../../img/english.png";
-import LatvianFlag from "../../img/latvian.png";
-import Logo from "../../img/logo.png";
+import RussianFlag from '../../img/russian.png'
+import EnglishFlag from '../../img/english.png'
+import LatvianFlag from '../../img/latvian.png'
+import Logo from '../../img/logo.png'
 
 class Header extends Component {
   constructor() {
-    super();
-    this.state = { isButtonActive: false, isVisible: false };
-    this.onClick = this.onClick.bind(this);
+    super()
+    this.state = { isButtonActive: false, isVisible: false }
+    this.onClick = this.onClick.bind(this)
   }
 
   onClick() {
     this.setState({
       isButtonActive: !this.state.isButtonActive,
-    });
+    })
   }
 
   componentDidMount() {
     this.setState({
       isVisible: true,
-    });
+    })
   }
 
   render() {
     return (
-      <div className="hero_back">
-        <div className="background">
-          <div className="header">
-            <div className="logo">
-              <img src={Logo} alt="House of light restaurant" />
+      <div className='hero_back'>
+        <div className='background'>
+          <div className='header'>
+            <div className='logo'>
+              <img src={Logo} alt='House of light restaurant' />
             </div>
             <motion.ul
               className={
                 this.state.isButtonActive
-                  ? "nav_list nav_list_active"
-                  : "nav_list"
+                  ? 'nav_list nav_list_active'
+                  : 'nav_list'
               }
             >
               <motion.li
                 initital={{ y: 0 }}
                 whileHover={{ y: -5 }}
-                className="nav_item"
+                className='nav_item'
               >
                 <a
-                  href="https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   {this.props.nav1}
                 </a>
@@ -61,89 +61,89 @@ class Header extends Component {
               <motion.li
                 initital={{ y: 0 }}
                 whileHover={{ y: -5 }}
-                className="nav_item"
+                className='nav_item'
               >
-                <ScrollIntoView selector="#about">
+                <ScrollIntoView selector='#about'>
                   <button onClick={this.onClick}>{this.props.about}</button>
                 </ScrollIntoView>
               </motion.li>
               <motion.li
                 initital={{ y: 0 }}
                 whileHover={{ y: -5 }}
-                className="nav_item"
+                className='nav_item'
               >
-                <ScrollIntoView selector="#brunch">
+                <ScrollIntoView selector='#brunch'>
                   <button onClick={this.onClick}>{this.props.brunch}</button>
                 </ScrollIntoView>
               </motion.li>
               <motion.li
                 initital={{ y: 0 }}
                 whileHover={{ y: -5 }}
-                className="nav_item"
+                className='nav_item'
               >
-                <ScrollIntoView selector="#keiterings">
+                <ScrollIntoView selector='#keiterings'>
                   <button onClick={this.onClick}>{this.props.banquet}</button>
                 </ScrollIntoView>
               </motion.li>
               <motion.li
                 initital={{ y: 0 }}
                 whileHover={{ y: -5 }}
-                className="nav_item"
+                className='nav_item'
               >
-                <ScrollIntoView selector="#footer">
+                <ScrollIntoView selector='#footer'>
                   <button onClick={this.onClick}>{this.props.contacts}</button>
                 </ScrollIntoView>
               </motion.li>
-              <li className="nav_item flags">
+              <li className='nav_item flags'>
                 <Link
-                  className="russian_flag flag"
-                  to={this.props.flag1 === "Russian" ? "/ru" : "/"}
+                  className='russian_flag flag'
+                  to={this.props.flag1 === 'Russian' ? '/ru' : '/'}
                 >
                   <img
                     src={
-                      this.props.flag1 === "Russian" ? RussianFlag : LatvianFlag
+                      this.props.flag1 === 'Russian' ? RussianFlag : LatvianFlag
                     }
-                    alt="house_of_light_russian"
-                    height="18px"
+                    alt='house_of_light_russian'
+                    height='18px'
                   />
                 </Link>
                 <Link
-                  className="english_flag flag"
-                  to={this.props.flag2 === "English" ? "/eng" : "/"}
+                  className='english_flag flag'
+                  to={this.props.flag2 === 'English' ? '/en' : '/'}
                 >
                   <img
                     src={
-                      this.props.flag2 === "English" ? EnglishFlag : LatvianFlag
+                      this.props.flag2 === 'English' ? EnglishFlag : LatvianFlag
                     }
-                    alt="house_of_light_english"
-                    height="18px"
+                    alt='house_of_light_english'
+                    height='18px'
                   />
                 </Link>
               </li>
             </motion.ul>
             <div
-              className={this.state.isButtonActive ? "burger hide " : "burger"}
+              className={this.state.isButtonActive ? 'burger hide ' : 'burger'}
               onClick={this.onClick}
             >
-              <i className="fas fa-bars"></i>
+              <i className='fas fa-bars'></i>
             </div>
             <div
-              className={this.state.isButtonActive ? "exit active" : "exit"}
+              className={this.state.isButtonActive ? 'exit active' : 'exit'}
               onClick={this.onClick}
             >
-              <i className="fas fa-times"></i>
+              <i className='fas fa-times'></i>
             </div>
           </div>
           <AnimatePresence initial={false}>
             {this.state.isVisible && (
-              <motion.div className="hero">
+              <motion.div className='hero'>
                 <motion.h3
                   initial={{ opacity: 0, y: 150 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     delay: 0.3,
                     duration: 2.2,
-                    type: "spring",
+                    type: 'spring',
                     bounce: 0.4,
                   }}
                 >
@@ -155,14 +155,14 @@ class Header extends Component {
                   transition={{
                     delay: 0.5,
                     duration: 2.2,
-                    type: "spring",
+                    type: 'spring',
                     bounce: 0.4,
                   }}
                 >
                   House of Light
                 </motion.h2>
                 <ScrollIntoView
-                  selector="#reserve"
+                  selector='#reserve'
                   whileHover={{ scale: 1.04 }}
                 >
                   <motion.button
@@ -171,7 +171,7 @@ class Header extends Component {
                     transition={{
                       delay: 0.7,
                       duration: 2.2,
-                      type: "spring",
+                      type: 'spring',
                       bounce: 0.4,
                     }}
                   >
@@ -183,8 +183,8 @@ class Header extends Component {
           </AnimatePresence>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

@@ -14,10 +14,10 @@
 
 .reserve form {
   padding-top: 1rem;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  align-items: center;
+  width: 100%;
   min-width: 500px;
 }
 
@@ -30,7 +30,7 @@
   border-bottom: 2px solid #3abadf;
 }
 
-.reserve form label {
+/* .reserve form label {
   padding-bottom: 10px;
   font-weight: 600;
   padding-left: 1rem;
@@ -61,7 +61,7 @@
   outline: none;
   background: rgba(58, 186, 223, 0.05);
   width: 100%;
-}
+} */
 
 .reserve button {
   cursor: pointer;
@@ -106,11 +106,11 @@
 
 @media only screen and (max-width: 1050px) {
   .reserve form {
-    width: 100%;
+    max-width: 100vw;
     min-width: 0;
   }
 
-  .reserve form input,
+  /* .reserve form input,
   .reserve form textarea {
     margin: 0.5rem 0rem;
     border-bottom: 1px solid #3abadf;
@@ -126,16 +126,15 @@
 
   .reserve form label {
     margin-top: 16px;
-  }
+  } */
 
   .reserve {
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 2rem;
     margin-bottom: 2rem;
   }
 
-  .reserve h1 {
+  .reserve h2 {
     width: 100%;
     font-size: 36px;
   }

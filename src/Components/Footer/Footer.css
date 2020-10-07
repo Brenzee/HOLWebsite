@@ -10,7 +10,7 @@
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contact_item {
@@ -47,7 +47,7 @@
 .working_hours {
   display: flex;
   color: white;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 

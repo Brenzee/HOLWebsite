@@ -2,6 +2,7 @@
   height: 60vh;
   background: #3abadf;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   padding: 5rem 4rem;
   padding-top: 10rem;
@@ -9,6 +10,7 @@
 
 .contact {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -21,6 +23,7 @@
 }
 
 .contact_item i {
+  width: 30px;
   color: white;
   font-size: 32px;
 }
@@ -31,7 +34,7 @@
   color: white;
   padding-left: 1rem;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   flex: 1;
 }
 
@@ -46,6 +49,7 @@
 
 .working_hours {
   display: flex;
+  width: 50%;
   color: white;
   justify-content: space-evenly;
   flex-direction: column;
@@ -79,6 +83,7 @@
 
   .contact {
     margin-top: 5rem;
+    width: 100%;
   }
 
   .contact_item i {
@@ -93,6 +98,7 @@
 
   .working_hours {
     margin-top: 1rem;
+    width: 100%;
   }
 
   .working_hours > div {

@@ -1,5 +1,6 @@
 .bankets {
-  margin: 3rem 5rem;
+  margin: 4rem 5rem;
+  margin-bottom: 2rem;
 }
 
 .bankets_grid {
@@ -81,7 +82,7 @@
 @media only screen and (max-width: 1050px) {
   .bankets {
     margin: 2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .bankets_grid {

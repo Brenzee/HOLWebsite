@@ -21,7 +21,7 @@ const Lv = () => {
   return (
     <div>
       <Helmet htmlAttributes={{ lang: 'lv' }}>
-        <link rel='canonical' href='https://hol.lv'></link>
+        <link rel='canonical' href='https://hol.lv/'></link>
         <title>Restorāns Grilbārs House of Light | Restorāns Jūrmalā</title>
         <meta
           name='title'

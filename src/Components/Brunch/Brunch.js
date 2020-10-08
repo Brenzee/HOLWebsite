@@ -4,7 +4,6 @@ import BrunchImg from '../../img/Brunch.jpg'
 
 const Brunch = ({ text }) => {
   const { brunch_list, brunch_title } = text
-  console.log(brunch_list)
 
   return (
     <div className='brunch' id='brunch'>
@@ -15,14 +14,19 @@ const Brunch = ({ text }) => {
           <ul>
             {brunch_list.map((item) => (
               <li key={item}>
-                <i class='fas fa-angle-right brunch_i'></i>
+                <i className='fas fa-angle-right brunch_i'></i>
                 <p>{item}</p>
               </li>
             ))}
           </ul>
         </div>
         <div className='brunch_list item_text'>
-          <img className='brunch_img' src={BrunchImg} alt='' width='100%' />
+          <img
+            className='brunch_img'
+            src={BrunchImg}
+            alt={brunch_title}
+            width='100%'
+          />
         </div>
       </div>
     </div>

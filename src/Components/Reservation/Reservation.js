@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Reservation.css'
 import emailjs from 'emailjs-com'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { makeStyles, TextField } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
@@ -19,8 +19,9 @@ function Reservation(props) {
   const [done, setDone] = useState(false)
   const [value, setValue] = useState({
     name: '',
-    date: '',
-    time: '',
+    date: `2020-12-12`,
+    time: '11:00',
+    phone: '+',
     count: 0,
     comments: '',
   })
@@ -30,17 +31,15 @@ function Reservation(props) {
       ...value,
       [e.target.name]: e.target.value,
     })
-    console.log(value)
   }
 
   const sendEmail = (e) => {
     e.preventDefault()
-    console.log(value)
     emailjs
       .sendForm(
         'service_ot3o2rd',
         'template_y074ozf',
-        value,
+        e.target,
         'user_7iqekkJfyJwJas5mZO0ww'
       )
       .then(
@@ -56,11 +55,17 @@ function Reservation(props) {
   return (
     <div className='reserve' id='reserve'>
       {done && <Redirect to='/success' />}
+      <div style={{ display: 'none' }}>
+        <Link to='/success'></Link>
+      </div>
       <div className='reserve_title'>
         <h2>{props.text.reserve_title}</h2>
       </div>
-      <form name='reservation' onSubmit={sendEmail} className={classes.root}>
-        <input type='hidden' name='form-name' value='reservation' />
+      <form
+        onSubmit={sendEmail}
+        name='reservation'
+        className={classes.root + ' reservation_form'}
+      >
         <TextField
           variant='outlined'
           id='name'
@@ -75,8 +80,8 @@ function Reservation(props) {
           name='date'
           type='date'
           onChange={handleChange}
-          label={props.text.reserve_date}
-          defaultValue='2020-10-01'
+          value={value.date}
+          placeholder={props.text.reserve_date}
           required
         />
         <TextField
@@ -85,7 +90,7 @@ function Reservation(props) {
           id='time'
           name='time'
           type='time'
-          defaultValue='11:00'
+          value={value.time}
           label={props.text.reserve_time}
           required
         />
@@ -94,8 +99,20 @@ function Reservation(props) {
           variant='outlined'
           id='count'
           name='count'
+          value={value.count}
           type='number'
           label={props.text.reserve_count}
+          InputProps={{ inputProps: { min: 0, max: 15 } }}
+          required
+        />
+        <TextField
+          onChange={handleChange}
+          variant='outlined'
+          id='phone'
+          name='phone'
+          value={value.phone}
+          type='text'
+          label={props.text.reserve_phone}
           required
         />
         <TextField
@@ -104,10 +121,10 @@ function Reservation(props) {
           id='comments'
           multiline
           name='comments'
+          value={value.comments}
           rows={4}
           label={props.text.reserve_comments}
         />
-
         <button type='submit'>{props.text.res_button}</button>
         {error && <p>Ir kluda</p>}
       </form>

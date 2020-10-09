@@ -16,26 +16,29 @@
 }
 
 .contact_item {
+  color: #3abadf;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 250px;
+  justify-content: space-between;
+  width: 270px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 25px;
+  background: white;
 }
 
 .contact_item i {
   width: 30px;
-  color: white;
+  color: #3abadf;
   font-size: 32px;
 }
 
 .contact_item a,
 .phone {
+  color: #3abadf;
   text-decoration: none;
-  color: white;
   padding-left: 1rem;
   font-weight: 500;
   font-size: 16px;
-  flex: 1;
 }
 
 .contact_item a:hover {
@@ -77,13 +80,19 @@
 @media only screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
-    height: 70vh;
+    height: 85vh;
     padding-top: 2rem;
   }
 
   .contact {
     margin-top: 5rem;
     width: 100%;
+  }
+
+  .contact_item {
+    width: 85%;
+    padding: 0.6rem;
+    margin: 1rem auto 0 auto;
   }
 
   .contact_item i {
@@ -93,7 +102,6 @@
   .contact_item a,
   .phone {
     font-size: 14px;
-    padding: 1rem;
   }
 
   .working_hours {

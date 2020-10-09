@@ -37,7 +37,7 @@
 .brunch_container {
   display: flex;
   padding-top: 2rem;
-  max-height: 470px;
+  max-height: 520px;
 }
 
 .brunch_about {
@@ -45,11 +45,11 @@
   flex: 4;
   margin-right: 2rem;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   border-radius: 25px;
   background: white;
-  padding: 1rem 1.2rem;
-  padding-bottom: 0;
+  padding: 1rem 1rem;
 }
 
 .brunch_img {
@@ -63,7 +63,7 @@
 }
 
 .brunch_about ul {
-  margin: auto 0 auto 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .brunch_about ul li {
@@ -80,6 +80,28 @@
 .brunch_i {
   color: #3abadf;
   font-size: 24px;
+}
+
+.brunch_button {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  background-color: #3abadf;
+  border-radius: 25px;
+  font-size: 24px;
+  transition: all 0.1s ease-out;
+  border: none;
+  cursor: pointer;
+}
+
+.brunch_button:hover {
+  background: rgba(58, 186, 223, 0.15);
+  color: #3abadf;
+}
+
+.brunch_button:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -120,5 +142,10 @@
 
   .brunch_about {
     font-size: 14px;
+  }
+
+  .brunch_button {
+    padding: 1rem 1.5rem;
+    font-size: 16px;
   }
 }

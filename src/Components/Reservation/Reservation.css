@@ -83,7 +83,7 @@
 }
 
 .reserve button:hover {
-  background: whitesmoke;
+  background: rgba(58, 186, 223, 0.15);
   color: #3abadf;
 }
 

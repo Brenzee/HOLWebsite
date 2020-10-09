@@ -8,10 +8,10 @@ const WhiteWave = () => {
       initial={{ scaleY: 1, y: 1 }}
       animate={{ scaleY: 1.15 }}
       transition={{
-        ease: 'linear',
+        ease: 'easeInOut',
         repeat: Infinity,
         repeatType: 'reverse',
-        duration: 1,
+        duration: 0.81,
       }}
       className='white_wave'
     ></motion.div>

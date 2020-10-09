@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3132147.chunk.css",
-    "main.js": "/static/js/main.5d9341a6.chunk.js",
-    "main.js.map": "/static/js/main.5d9341a6.chunk.js.map",
+    "main.css": "/static/css/main.b8457cfc.chunk.css",
+    "main.js": "/static/js/main.95fa391c.chunk.js",
+    "main.js.map": "/static/js/main.95fa391c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.47525962.js",
     "runtime-main.js.map": "/static/js/runtime-main.47525962.js.map",
-    "static/js/2.315f8ff1.chunk.js": "/static/js/2.315f8ff1.chunk.js",
-    "static/js/2.315f8ff1.chunk.js.map": "/static/js/2.315f8ff1.chunk.js.map",
+    "static/js/2.65001cf5.chunk.js": "/static/js/2.65001cf5.chunk.js",
+    "static/js/2.65001cf5.chunk.js.map": "/static/js/2.65001cf5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e3f1d1fbbd5c8c34ce9d613c0f51865b.js": "/precache-manifest.e3f1d1fbbd5c8c34ce9d613c0f51865b.js",
+    "precache-manifest.c0dba7c3a705f286c2432cf02c1ab4cc.js": "/precache-manifest.c0dba7c3a705f286c2432cf02c1ab4cc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e3132147.chunk.css.map": "/static/css/main.e3132147.chunk.css.map",
-    "static/js/2.315f8ff1.chunk.js.LICENSE.txt": "/static/js/2.315f8ff1.chunk.js.LICENSE.txt",
+    "static/css/main.b8457cfc.chunk.css.map": "/static/css/main.b8457cfc.chunk.css.map",
+    "static/js/2.65001cf5.chunk.js.LICENSE.txt": "/static/js/2.65001cf5.chunk.js.LICENSE.txt",
     "static/media/Header.css": "/static/media/Background1.5320a5c0.jpg",
     "static/media/Brunch.jpg": "/static/media/Brunch.1d54cf07.jpg",
+    "static/media/Burger.jpg": "/static/media/Burger.6bb465b6.jpg",
     "static/media/Keiterings.jpg": "/static/media/Keiterings.cd174fad.jpg",
     "static/media/gift.jpg": "/static/media/gift.e384bd32.jpg",
     "static/media/inside.jpg": "/static/media/inside.c0b7b225.jpg",
-    "static/media/mojito.jpg": "/static/media/mojito.e6cc97d3.jpg",
     "static/media/steak.jpg": "/static/media/steak.4c8babd1.jpg",
     "static/media/wine.jpg": "/static/media/wine.cb7b0feb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.47525962.js",
-    "static/js/2.315f8ff1.chunk.js",
-    "static/css/main.e3132147.chunk.css",
-    "static/js/main.5d9341a6.chunk.js"
+    "static/js/2.65001cf5.chunk.js",
+    "static/css/main.b8457cfc.chunk.css",
+    "static/js/main.95fa391c.chunk.js"
   ]
 }

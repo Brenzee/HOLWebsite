@@ -34,7 +34,7 @@ class Header extends Component {
     return (
       <div className='hero_back'>
         <div className='background'>
-          <div className='header'>
+          <header className='header'>
             <div className='logo'>
               <img src={Logo} alt='House of light restaurant' />
             </div>
@@ -45,11 +45,7 @@ class Header extends Component {
                   : 'nav_list'
               }
             >
-              <motion.li
-                initital={{ y: 0 }}
-                whileHover={{ y: -5 }}
-                className='nav_item'
-              >
+              <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
                 <a
                   href='https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal'
                   target='_blank'
@@ -58,38 +54,22 @@ class Header extends Component {
                   {this.props.nav1}
                 </a>
               </motion.li>
-              <motion.li
-                initital={{ y: 0 }}
-                whileHover={{ y: -5 }}
-                className='nav_item'
-              >
+              <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
                 <ScrollIntoView selector='#about'>
                   <button onClick={this.onClick}>{this.props.about}</button>
                 </ScrollIntoView>
               </motion.li>
-              <motion.li
-                initital={{ y: 0 }}
-                whileHover={{ y: -5 }}
-                className='nav_item'
-              >
+              <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
                 <ScrollIntoView selector='#brunch'>
                   <button onClick={this.onClick}>{this.props.brunch}</button>
                 </ScrollIntoView>
               </motion.li>
-              <motion.li
-                initital={{ y: 0 }}
-                whileHover={{ y: -5 }}
-                className='nav_item'
-              >
+              <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
                 <ScrollIntoView selector='#keiterings'>
                   <button onClick={this.onClick}>{this.props.banquet}</button>
                 </ScrollIntoView>
               </motion.li>
-              <motion.li
-                initital={{ y: 0 }}
-                whileHover={{ y: -5 }}
-                className='nav_item'
-              >
+              <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
                 <ScrollIntoView selector='#footer'>
                   <button onClick={this.onClick}>{this.props.contacts}</button>
                 </ScrollIntoView>
@@ -133,7 +113,7 @@ class Header extends Component {
             >
               <i className='fas fa-times'></i>
             </div>
-          </div>
+          </header>
           <AnimatePresence initial={false}>
             {this.state.isVisible && (
               <motion.div className='hero'>
@@ -161,11 +141,8 @@ class Header extends Component {
                 >
                   House of Light
                 </motion.h2>
-                <ScrollIntoView
-                  selector='#reserve'
-                  whileHover={{ scale: 1.04 }}
-                >
-                  <motion.button
+                <ScrollIntoView selector='#reserve'>
+                  <motion.div
                     initial={{ opacity: 0, y: 150 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
@@ -175,8 +152,13 @@ class Header extends Component {
                       bounce: 0.4,
                     }}
                   >
-                    {this.props.reserve}
-                  </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.04 }}
+                      whileTap={{ scale: 0.89 }}
+                    >
+                      {this.props.reserve}
+                    </motion.button>
+                  </motion.div>
                 </ScrollIntoView>
               </motion.div>
             )}

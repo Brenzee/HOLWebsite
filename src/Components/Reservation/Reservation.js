@@ -3,6 +3,7 @@ import './Reservation.css'
 import emailjs from 'emailjs-com'
 import { Link, Redirect } from 'react-router-dom'
 import { makeStyles, TextField } from '@material-ui/core'
+import { motion } from 'framer-motion'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Reservation(props) {
   const classes = useStyles()
+  const [disabled, setDisabled] = useState(false)
   const [error, setError] = useState(false)
   const [done, setDone] = useState(false)
   const [value, setValue] = useState({
@@ -35,6 +37,8 @@ function Reservation(props) {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setDisabled(true)
+    console.log('pressed')
     emailjs
       .sendForm(
         'service_ot3o2rd',
@@ -125,7 +129,14 @@ function Reservation(props) {
           rows={4}
           label={props.text.reserve_comments}
         />
-        <button type='submit'>{props.text.res_button}</button>
+        <motion.button
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.95 }}
+          type='submit'
+          disabled={disabled ? true : ''}
+        >
+          {props.text.res_button}
+        </motion.button>
         {error && <p>Ir kluda</p>}
       </form>
     </div>

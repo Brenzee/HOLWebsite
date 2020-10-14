@@ -10,41 +10,41 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-178911196-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag("js", new Date());
+      gtag('js', new Date())
 
-      gtag("config", "UA-178911196-1");
+      gtag('config', 'UA-178911196-1')
     </script>
     <!-- Facebook Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
+        if (f.fbq) return
         n = f.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
       })(
         window,
         document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "1055869274868532");
-      fbq("track", "PageView");
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      )
+      fbq('init', '1055869274868532')
+      fbq('track', 'PageView')
     </script>
     <noscript
       ><img
@@ -84,19 +84,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <form name="reservation" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" id="name" name="name" placeholder="Rozevelts" />
-      <input type="text" id="date" name="date" placeholder="DD/MM/GGGG" />
-      <input type="text" id="time" name="time" placeholder="SS:MM" />
-      <input type="number" id="count" name="count" placeholder="2" />
-      <input type="text" id="phone" name="phone" placeholder="+371 ********" />
-      <input
-        type="text"
-        id="comments"
-        name="comments"
-        placeholder="Nepieciešams bērnu krēsliņš utt."
-      />
-    </form>
+
     <div id="root"></div>
   </body>
 </html>

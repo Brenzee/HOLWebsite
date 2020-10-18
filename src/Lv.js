@@ -4,11 +4,10 @@ import React, { Suspense, lazy } from 'react'
 import Header from './Components/Header/Header'
 import SocialMedia from './Components/SocialMedia/SocialMedia'
 import WhiteWave from './Components/White Wave/WhiteWave'
-
 import WhiteWaveBottom from './Components/WhiteWaveBottom/WhiteWaveBottom'
 import Footer from './Components/Footer/Footer'
 import contentLv from './content/contentLv'
-
+import Reviews from './Components/Reviews/Reviews'
 import { Helmet } from 'react-helmet'
 
 const About = lazy(() => import('./Components/About/About'))
@@ -25,11 +24,11 @@ const Lv = () => {
         <title>Restorāns Grilbārs House of Light | Restorāns Jūrmalā</title>
         <meta
           name='title'
-          content='Restorāns Grilbārs House of Light | Restorāns Jūrmalā'
+          content='Restorāns Grilbārs House of Light | Restorāns Jūrmalā, Jomas ielā'
         />
         <meta
           name='description'
-          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā.'
+          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas branča vieta Jūrmalā. House of Light restorāns Jūrmala.'
         />
 
         {/* <!-- Open Graph / Facebook --> */}
@@ -37,11 +36,11 @@ const Lv = () => {
         <meta property='og:url' content='https://hol.lv/' />
         <meta
           property='og:title'
-          content='Restorāns Grilbārs House of Light | Restorāns Jūrmalā'
+          content='Restorāns Grilbārs House of Light | Restorāns Jūrmalā, Jomas ielā'
         />
         <meta
           property='og:description'
-          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā.'
+          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas branča vieta Jūrmalā. House of Light restorāns Jūrmalā.'
         />
         <meta
           property='og:image'
@@ -50,7 +49,7 @@ const Lv = () => {
 
         <meta
           name='keywords'
-          content='restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā, svētdienas brunch, svētdienas brunch jūrmalā'
+          content='restorāns jūrmalā, restorāns, restorāns jomas iela, brančš jūrmalā, svētdienas brančs, svētdienas brančs jūrmalā'
         />
 
         <meta property='twitter:card' content='summary_large_image' />
@@ -61,7 +60,7 @@ const Lv = () => {
         />
         <meta
           property='twitter:description'
-          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brunch vieta Jūrmalā. House of Light restorāns Jūrmalā.'
+          content='Restorāns grilbārs House Of Light Jūrmalas sirdī Jomas ielā. Izcila svētdienas brančs vieta Jūrmalā. House of Light restorāns Jūrmalā.'
         />
         <meta property='twitter:image' content='%PUBLIC_URL%/About1.jpg' />
       </Helmet>
@@ -90,6 +89,7 @@ const Lv = () => {
       <Suspense fallback={' '}>
         <Keiterings text={contentLv} />
       </Suspense>
+      <Reviews />
       <Suspense fallback={' '}>
         <Reservation text={contentLv} />
       </Suspense>

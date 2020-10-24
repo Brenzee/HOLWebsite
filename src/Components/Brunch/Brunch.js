@@ -1,7 +1,7 @@
 import React from 'react'
 import './Brunch.css'
+import { Link } from 'react-scroll'
 import BrunchImg from '../../img/Brunch.jpg'
-import ScrollIntoView from 'react-scroll-into-view'
 import { motion } from 'framer-motion'
 
 const Brunch = ({ text }) => {
@@ -23,7 +23,13 @@ const Brunch = ({ text }) => {
               </li>
             ))}
           </ul>
-          <ScrollIntoView selector='#reserve'>
+          <Link
+            to='reservation'
+            spy={true}
+            smooth={true}
+            offset={-130}
+            duration={800}
+          >
             <motion.button
               className='brunch_button'
               whileHover={{ scale: 1.04, originX: 0 }}
@@ -32,7 +38,7 @@ const Brunch = ({ text }) => {
             >
               {res_button}
             </motion.button>
-          </ScrollIntoView>
+          </Link>
         </div>
         <div className='brunch_list item_text'>
           <img

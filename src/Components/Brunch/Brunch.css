@@ -84,12 +84,13 @@
 
 .brunch_button {
   text-decoration: none;
+  margin: auto;
   color: black;
   font-weight: 600;
-  padding: 1rem 3rem;
+  padding: 0.75rem 2rem;
   background-color: #3abadf;
   border-radius: 25px;
-  font-size: 24px;
+  font-size: 22px;
   transition: all 0.1s ease-out;
   border: none;
   cursor: pointer;

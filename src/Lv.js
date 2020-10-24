@@ -7,7 +7,6 @@ import WhiteWave from './Components/White Wave/WhiteWave'
 import WhiteWaveBottom from './Components/WhiteWaveBottom/WhiteWaveBottom'
 import Footer from './Components/Footer/Footer'
 import contentLv from './content/contentLv'
-import Reviews from './Components/Reviews/Reviews'
 import { Helmet } from 'react-helmet'
 
 const About = lazy(() => import('./Components/About/About'))
@@ -89,7 +88,7 @@ const Lv = () => {
       <Suspense fallback={' '}>
         <Keiterings text={contentLv} />
       </Suspense>
-      <Reviews />
+
       <Suspense fallback={' '}>
         <Reservation text={contentLv} />
       </Suspense>

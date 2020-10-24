@@ -1,4 +1,5 @@
 .footer {
+  min-height: 400px;
   height: 60vh;
   background: #3abadf;
   display: flex;

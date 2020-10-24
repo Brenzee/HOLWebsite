@@ -23,7 +23,7 @@ function Reservation(props) {
     name: '',
     date: `2020-12-12`,
     time: '11:00',
-    phone: '+',
+    phone: '+371',
     count: 0,
     comments: '',
   })

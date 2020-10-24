@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
 import { Component } from 'react'
+import ScrollIntoView from 'react-scroll-into-view'
 import { Link } from 'react-router-dom'
-import { Link as LinkScroll } from 'react-scroll'
 import { AnimatePresence, motion } from 'framer-motion'
 
 //Components
@@ -55,48 +55,24 @@ class Header extends Component {
                 </a>
               </motion.li>
               <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                <LinkScroll
-                  to='about'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={750}
-                >
+                <ScrollIntoView selector='#about'>
                   <button onClick={this.onClick}>{this.props.about}</button>
-                </LinkScroll>
+                </ScrollIntoView>
               </motion.li>
               <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                <LinkScroll
-                  to='brunch'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={800}
-                >
+                <ScrollIntoView selector='#brunch'>
                   <button onClick={this.onClick}>{this.props.brunch}</button>
-                </LinkScroll>
+                </ScrollIntoView>
               </motion.li>
               <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                <LinkScroll
-                  to='keiterings'
-                  spy={true}
-                  smooth={true}
-                  offset={-20}
-                  duration={900}
-                >
+                <ScrollIntoView selector='#keiterings'>
                   <button onClick={this.onClick}>{this.props.banquet}</button>
-                </LinkScroll>
+                </ScrollIntoView>
               </motion.li>
               <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                <LinkScroll
-                  to='footer'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={900}
-                >
+                <ScrollIntoView selector='#footer'>
                   <button onClick={this.onClick}>{this.props.contacts}</button>
-                </LinkScroll>
+                </ScrollIntoView>
               </motion.li>
               <li className='nav_item flags'>
                 <Link
@@ -165,13 +141,7 @@ class Header extends Component {
                 >
                   House of Light
                 </motion.h2>
-                <LinkScroll
-                  to='reserve'
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={800}
-                >
+                <ScrollIntoView selector='#reserve'>
                   <motion.div
                     initial={{ opacity: 0, y: 150 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -189,7 +159,7 @@ class Header extends Component {
                       {this.props.reserve}
                     </motion.button>
                   </motion.div>
-                </LinkScroll>
+                </ScrollIntoView>
               </motion.div>
             )}
           </AnimatePresence>

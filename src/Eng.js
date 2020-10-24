@@ -26,7 +26,7 @@ const Eng = () => {
         </title>
         <meta
           name='title'
-          content='Restaurant Grillbar House of Light | Restaurant in Jurmala, Jomas street'
+          content='Restaurant Grillbar House of Light | Restaurant in Jurmala'
         />
         <meta
           name='description'

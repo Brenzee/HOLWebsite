@@ -1,7 +1,7 @@
 import React from 'react'
 import './Brunch.css'
-import BrunchImg from '../../img/Brunch.jpg'
 import ScrollIntoView from 'react-scroll-into-view'
+import BrunchImg from '../../img/Brunch.jpg'
 import { motion } from 'framer-motion'
 
 const Brunch = ({ text }) => {

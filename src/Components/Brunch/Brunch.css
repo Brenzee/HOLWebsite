@@ -52,6 +52,10 @@
   padding: 1rem 1rem;
 }
 
+.brunch_about > p {
+  line-height: 28px;
+}
+
 .brunch_img {
   object-fit: cover;
   border-radius: 25px;
@@ -129,6 +133,8 @@
   }
 
   .brunch_about > p {
+    line-height: 24px;
+
     margin-bottom: 2rem;
   }
 

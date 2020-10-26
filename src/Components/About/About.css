@@ -120,6 +120,10 @@ div .hol_picture svg {
     padding: 0;
   }
 
+  .about_text h1 {
+    font-size: 28px;
+  }
+
   /* House of Light Texta sadalījums ar iconam */
   .about_item {
     grid-template-columns: 10% auto;

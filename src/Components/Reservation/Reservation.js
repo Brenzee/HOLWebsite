@@ -22,7 +22,7 @@ function Reservation(props) {
   const [value, setValue] = useState({
     name: '',
     date: `2020-12-12`,
-    time: '11:00',
+    time: '12:00',
     phone: '+',
     count: 0,
     comments: '',

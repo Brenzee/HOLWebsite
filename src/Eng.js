@@ -69,6 +69,7 @@ const Eng = () => {
         <meta property='twitter:image' content='%PUBLIC_URL%/About1.jpg' />
       </Helmet>
       <Header
+        topLine={contentEng.topLine}
         about={contentEng.about}
         brunch={contentEng.brunch}
         menu='Menu'

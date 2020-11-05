@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-//All components
+
 //All components
 import Header from './Components/Header/Header'
 import SocialMedia from './Components/SocialMedia/SocialMedia'
@@ -65,6 +65,7 @@ function Ru() {
         <meta property='twitter:image' content='%PUBLIC_URL%/About1.jpg' />
       </Helmet>
       <Header
+        topLine={contentRu.topLine}
         about={contentRu.about}
         brunch={contentRu.brunch}
         menu='Меню'

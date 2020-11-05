@@ -6,11 +6,16 @@
   width: 100%;
   height: 20vh;
   left: 0px;
-  top: 80vh;
+  top: 90vh;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .white_wave {
-    top: 80vh;
+    top: 90vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .white_wave {
+    top: 94vh;
   }
 }

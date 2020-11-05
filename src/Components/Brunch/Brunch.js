@@ -23,6 +23,8 @@ const Brunch = ({ text }) => {
               </li>
             ))}
           </ul>
+          <h3 className='brunch_title2'>{text.brunch_title2}</h3>
+          <p>{text.brunch_about2}</p>
           <ScrollIntoView selector='#reserve'>
             <motion.button
               className='brunch_button'

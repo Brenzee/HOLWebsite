@@ -11,6 +11,38 @@
   width: 100%;
 }
 
+/* Top Link */
+
+.topline {
+  background-color: #3abadf;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 500;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.topline_link {
+  border-radius: 15px;
+  color: #3abadf;
+  text-decoration: none;
+  background-color: white;
+  padding: 5px 15px;
+  font-size: 18px;
+  transition: all 0.2s ease-in;
+  margin-left: 1rem;
+}
+
+.topline_link:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.topline_link:visited {
+  color: #3abadf;
+}
+
 /* VISS HEADERIS */
 .header {
   display: flex;
@@ -185,13 +217,12 @@ li {
   /* Nav List */
   .nav_list {
     position: fixed;
-    overflow: hidden;
     top: 0;
     left: -100%;
     flex-direction: column;
     justify-content: space-evenly;
     background: rgba(0, 0, 0, 0.86);
-    height: 105vh;
+    height: 100vh;
     width: 100%;
     margin-top: 0rem;
     padding-top: 2rem;
@@ -227,8 +258,10 @@ li {
     font-size: 36px;
     display: none;
     position: fixed;
+    top: 8vh;
     right: 3rem;
     z-index: 26;
+    transition: all ease-out 0.5s;
   }
 
   .active {
@@ -249,5 +282,15 @@ li {
 @media only screen and (max-width: 950px) {
   ul {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .topline {
+    flex-direction: column;
+  }
+
+  .topline_link {
+    margin: 0;
   }
 }

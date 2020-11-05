@@ -21,10 +21,10 @@ function Reservation(props) {
   const [done, setDone] = useState(false)
   const [value, setValue] = useState({
     name: '',
-    date: `2020-12-12`,
+    date: `${new Date().toISOString().slice(0, 10)}`,
     time: '12:00',
-    phone: '+',
-    count: 0,
+    phone: '+371',
+    count: 2,
     comments: '',
   })
 

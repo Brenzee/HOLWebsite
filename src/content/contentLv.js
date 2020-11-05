@@ -1,7 +1,8 @@
 const contentLv = {
+  topLine: 'Iepazīsties ar mūsu brīvdienu branču!',
   nav1: 'Menu',
   about: 'Par mums',
-  brunch: 'Brančš',
+  brunch: 'Brančs',
   banquet: 'Banketi',
   contacts: 'Kontakti',
   flag1: 'Russian',
@@ -17,16 +18,19 @@ const contentLv = {
     'Restorāna plašajā ēdienkartē esam iekļāvuši svaigus salātus, uzkodas, uzkodu plates, izcilus jūras velšu ēdienus, veģetārus un vegānus ēdienus, pašu kūpinātu zivis un gaļu, burgerus, pastas, ēdienus gatavotus uz grila, kā arī izcilus desertus. Restorāna House of Light piedāvājumā ir arī Latvijā ražoti vīni un Latvijā grauzdēta kafija.',
   about3:
     'Mīļi gaidām arī ģimenes ar bērniem, jo restorāna telpās esam parūpējušies par atsevišķu krāsojamo bērnu ēdienkarti, atraktīvu bērnu stūrīti, āra bērna laukumiņu, kā arī pārtinamo galdiņu pašiem mazākajiem.',
-  brunch_title: 'Svētdienas brančs',
+  brunch_title: 'Brīvdienu Brančs',
   brunch_about:
     'Lai arī mūsu ierastos Brančus vēl nodrošināt nevaram, ņemot vērā lielo pieprasījumu pēc brīvdienu vēlajām brokastīm, esam izveidojuši jaunu konceptu – “Mini Branči”, kas ļauj mums parūpēties par jūsu drošību, uzklājot Mini Branča galdu tieši Jums!',
   brunch_list: [
-    'Katru svētdienu, 12:00 – 15:00',
+    'Katru sestdienu un svētdienu, 12:00 – 15:00',
     'Katru nedēļu jauns piedāvājums',
     '20 € no personas',
     'Bērniem līdz 6 gadu vecumam par brīvu, no 7 gadiem - 10€',
     'Cenā iekļauta glāze Prosecco vai karstvīns, ūdens, morss, kafija un tēja',
   ],
+  brunch_title2: 'Līdzņemšanas Brančs',
+  brunch_about2:
+    'Kā arī – piedāvājam iespēju uzklāt vēlo brokastu galdu Jūsu mājas, piedāvājot Branču līdzņemšanai! Pasūtījumiem sākot no 4 cilvēkiem – Prosecco pudele dāvanā!',
   banquet_title: 'Banketu piedāvājums',
   banquet_subtitle: 'Jūs svinat – mēs gatavojam!',
   banquet1:

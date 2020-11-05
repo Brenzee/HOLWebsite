@@ -67,6 +67,7 @@ const Lv = () => {
       </Helmet>
 
       <Header
+        topLine={contentLv.topLine}
         about={contentLv.about}
         brunch={contentLv.brunch}
         menu='Menu'

@@ -10,6 +10,7 @@ import RussianFlag from '../../img/russian.png'
 import EnglishFlag from '../../img/english.png'
 import LatvianFlag from '../../img/latvian.png'
 import Logo from '../../img/logo.png'
+import WhiteWave from '../White Wave/WhiteWave'
 
 class Header extends Component {
   constructor() {
@@ -33,19 +34,19 @@ class Header extends Component {
   render() {
     return (
       <>
-        <div className='topline'>
+        <div className="topline">
           <p>{this.props.topLine}</p>
           <div>
-            <a className='topline_link' href='#brunch'>
+            <a className="topline_link" href="#brunch">
               {this.props.brunch}
             </a>
           </div>
         </div>
-        <div className='hero_back'>
-          <div className='background'>
-            <header className='header'>
-              <div className='logo'>
-                <img src={Logo} alt='House of light restaurant' />
+        <div className="hero_back">
+          <div className="background">
+            <header className="header">
+              <div className="logo">
+                <img src={Logo} alt="House of light restaurant" />
               </div>
               <motion.ul
                 className={
@@ -54,40 +55,40 @@ class Header extends Component {
                     : 'nav_list'
                 }
               >
-                <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
+                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
                   <a
-                    href='https://www.facebook.com/pg/houseoflightgrilbars/menu/?ref=page_internal'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="http://hol.lv/MenuHOL.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {this.props.nav1}
                   </a>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                  <ScrollIntoView selector='#about'>
+                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
+                  <ScrollIntoView selector="#about">
                     <button onClick={this.onClick}>{this.props.about}</button>
                   </ScrollIntoView>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                  <ScrollIntoView selector='#brunch'>
+                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
+                  <ScrollIntoView selector="#brunch">
                     <button onClick={this.onClick}>{this.props.brunch}</button>
                   </ScrollIntoView>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                  <ScrollIntoView selector='#keiterings'>
+                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
+                  <ScrollIntoView selector="#keiterings">
                     <button onClick={this.onClick}>{this.props.banquet}</button>
                   </ScrollIntoView>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.04 }} className='nav_item'>
-                  <ScrollIntoView selector='#footer'>
+                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
+                  <ScrollIntoView selector="#footer">
                     <button onClick={this.onClick}>
                       {this.props.contacts}
                     </button>
                   </ScrollIntoView>
                 </motion.li>
-                <li className='nav_item flags'>
+                <li className="nav_item flags">
                   <Link
-                    className='russian_flag flag'
+                    className="russian_flag flag"
                     to={this.props.flag1 === 'Russian' ? '/ru' : '/'}
                   >
                     <img
@@ -96,12 +97,12 @@ class Header extends Component {
                           ? RussianFlag
                           : LatvianFlag
                       }
-                      alt='house_of_light_russian'
-                      height='18px'
+                      alt="house_of_light_russian"
+                      height="18px"
                     />
                   </Link>
                   <Link
-                    className='english_flag flag'
+                    className="english_flag flag"
                     to={this.props.flag2 === 'English' ? '/en' : '/'}
                   >
                     <img
@@ -110,8 +111,8 @@ class Header extends Component {
                           ? EnglishFlag
                           : LatvianFlag
                       }
-                      alt='house_of_light_english'
-                      height='18px'
+                      alt="house_of_light_english"
+                      height="18px"
                     />
                   </Link>
                 </li>
@@ -122,18 +123,18 @@ class Header extends Component {
                 }
                 onClick={this.onClick}
               >
-                <i className='fas fa-bars'></i>
+                <i className="fas fa-bars"></i>
               </div>
               <div
                 className={this.state.isButtonActive ? 'exit active' : 'exit'}
                 onClick={this.onClick}
               >
-                <i className='fas fa-times'></i>
+                <i className="fas fa-times"></i>
               </div>
             </header>
             <AnimatePresence initial={false}>
               {this.state.isVisible && (
-                <motion.div className='hero'>
+                <motion.div className="hero">
                   <motion.h3
                     initial={{ opacity: 0, y: 150 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -158,7 +159,7 @@ class Header extends Component {
                   >
                     House of Light
                   </motion.h2>
-                  <ScrollIntoView selector='#reserve'>
+                  {/* <ScrollIntoView selector="#reserve">
                     <motion.div
                       initial={{ opacity: 0, y: 150 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -176,10 +177,11 @@ class Header extends Component {
                         {this.props.reserve}
                       </motion.button>
                     </motion.div>
-                  </ScrollIntoView>
+                  </ScrollIntoView> */}
                 </motion.div>
               )}
             </AnimatePresence>
+            <WhiteWave />
           </div>
         </div>
       </>

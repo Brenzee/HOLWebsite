@@ -1,11 +1,17 @@
 .bankets {
-  margin: 4rem 5rem;
-  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  /* margin: 4rem 5rem;
+  margin-bottom: 2rem; */
 }
 
 .bankets_grid {
   display: grid;
   grid-template-columns: 40% auto;
+}
+.image {
+  width: 100%;
 }
 
 .image img {
@@ -80,8 +86,11 @@
 
 @media only screen and (max-width: 1050px) {
   .bankets {
-    margin: 2rem;
+    /* margin: 2rem;
+    margin-top: 5rem; */
+    padding: 2rem;
     margin-top: 5rem;
+    margin-bottom: 0;
   }
 
   .bankets_grid {
@@ -94,6 +103,7 @@
   }
 
   .image img {
+    width: 100%;
     min-height: 0;
     max-height: 280px;
     object-position: 0 75%;

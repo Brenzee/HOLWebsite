@@ -1,13 +1,15 @@
-.image-list {
+/* .image-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   grid-gap: 0 0px;
   grid-auto-rows: 10px;
   justify-content: center;
   align-items: center;
-}
+} */
+/* .image-list {
+} */
 
-.image-list img {
+/* .image-list img {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -18,4 +20,26 @@
   .image-list {
     margin-top: 3rem;
   }
+} */
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  /* margin-left: -30px; gutter size offset */
+  width: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.my-masonry-grid_column {
+  /* padding-left: 30px; gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > img {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+
+  width: 100%;
 }

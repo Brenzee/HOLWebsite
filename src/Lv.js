@@ -1,26 +1,26 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy } from 'react'
 
 //All components
-import Header from "./Components/Header/Header";
-import SocialMedia from "./Components/SocialMedia/SocialMedia";
-import WhiteWave from "./Components/White Wave/WhiteWave";
+import Header from './Components/Header/Header'
+import SocialMedia from './Components/SocialMedia/SocialMedia'
+import WhiteWave from './Components/White Wave/WhiteWave'
 
-import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
-import Footer from "./Components/Footer/Footer";
-import contentLv from "./content/contentLv";
+import WhiteWaveBottom from './Components/WhiteWaveBottom/WhiteWaveBottom'
+import Footer from './Components/Footer/Footer'
+import contentLv from './content/contentLv'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
-const About = lazy(() => import("./Components/About/About"));
-const Brunch = lazy(() => import("./Components/Brunch/Brunch"));
-const Keiterings = lazy(() => import("./Components/Keiterings/Keiterings"));
-const Reservation = lazy(() => import("./Components/Reservation/Reservation"));
-const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
+const About = lazy(() => import('./Components/About/About'))
+const Brunch = lazy(() => import('./Components/Brunch/Brunch'))
+const Keiterings = lazy(() => import('./Components/Keiterings/Keiterings'))
+const Reservation = lazy(() => import('./Components/Reservation/Reservation'))
+const Gallery = lazy(() => import('./Components/Gallery/Gallery'))
 
 const Lv = () => {
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: "lv" }}>
+      <Helmet htmlAttributes={{ lang: 'lv' }}>
         <link rel="canonical" href="https://hol.lv/"></link>
         <title>Restorāns Grilbārs House of Light | Restorāns Jūrmalā</title>
         <meta
@@ -81,29 +81,29 @@ const Lv = () => {
       />
 
       <SocialMedia />
-      <WhiteWave />
-      <Suspense fallback={" "}>
+      {/* <WhiteWave /> */}
+      <Suspense fallback={' '}>
         <About text={contentLv} />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Brunch text={contentLv} />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Keiterings text={contentLv} />
       </Suspense>
       {/* <Suspense fallback={' '}>
         <Reservation text={contentLv} />
       </Suspense> */}
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Gallery />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <WhiteWaveBottom />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Footer text={contentLv} />
       </Suspense>
     </div>
-  );
-};
-export default Lv;
+  )
+}
+export default Lv

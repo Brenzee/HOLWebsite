@@ -1,18 +1,21 @@
-.footer {
-  height: 60vh;
+.outsideFooter {
   background: #3abadf;
+}
+
+.footer {
   display: flex;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-content: space-around;
-  padding: 5rem 4rem;
-  padding-top: 10rem;
+  padding: 5rem 0;
 }
 
 .contact {
   display: flex;
   width: 50%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .contact_item {
@@ -21,9 +24,10 @@
   align-items: center;
   justify-content: space-between;
   width: 270px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
   background: white;
+  margin-bottom: 1rem;
 }
 
 .contact_item i {
@@ -54,8 +58,12 @@
   display: flex;
   width: 50%;
   color: white;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
+}
+
+.working_hours > div {
+  margin-bottom: 1rem;
 }
 
 .day {
@@ -69,8 +77,11 @@
 }
 
 .day h4 {
-  padding-left: 1rem;
   font-size: 18px;
+}
+
+.day h4:last-of-type {
+  margin-left: 1rem;
 }
 
 .rights {
@@ -80,12 +91,11 @@
 @media only screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
-    height: 85vh;
-    padding-top: 2rem;
+    padding: 0 2rem 2rem;
   }
 
   .contact {
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 100%;
   }
 
@@ -105,12 +115,8 @@
   }
 
   .working_hours {
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 100%;
-  }
-
-  .working_hours > div {
-    padding: 0.5rem 0;
   }
 
   .working_title {

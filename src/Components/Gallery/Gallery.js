@@ -1,5 +1,6 @@
 import React from 'react'
 import './Gallery.css'
+import Masonry from 'react-masonry-css'
 
 //All images for gallery
 import Inside from '../../img/img_gallery/inside.jpg'
@@ -9,13 +10,29 @@ import Wine from '../../img/img_gallery/wine.jpg'
 import Burger from '../../img/img_gallery/Burger.jpg'
 import Card from './Card'
 
+const breakpointColumnsObj = {
+  default: 4,
+  1100: 3,
+  700: 2,
+  500: 1,
+}
+
 const Gallery = () => {
   const images = [Salad, Inside, Wine, Burger, Cakes]
 
   const arrangeImg = images.map((img) => {
-    return <Card src={img} key={img}></Card>
+    return <img src={img} key={img} />
   })
-  return <div className='image-list'>{arrangeImg}</div>
+
+  return (
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column"
+    >
+      {arrangeImg}
+    </Masonry>
+  )
 }
 
 export default Gallery

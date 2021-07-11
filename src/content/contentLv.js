@@ -22,7 +22,7 @@ const contentLv = {
   brunch_about:
     'Lai arī mūsu ierastos Brančus vēl nodrošināt nevaram, ņemot vērā lielo pieprasījumu pēc brīvdienu vēlajām brokastīm, esam izveidojuši jaunu konceptu – “Mini Branči”, kas ļauj mums parūpēties par jūsu drošību, uzklājot Mini Branča galdu tieši Jums!',
   brunch_list: [
-    'Katru sestdienu un svētdienu, 12:00 – 15:00',
+    'Katru svētdienu, 12:00 – 15:00',
     'Katru nedēļu jauns piedāvājums',
     '20 € no personas',
     'Bērniem līdz 6 gadu vecumam par brīvu, no 7 gadiem - 10€',

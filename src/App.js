@@ -16,10 +16,10 @@ const App = () => {
       <div>
         <BrowserRouter>
           <Switch>
-            <Route path='/ru' component={Ru} />
-            <Route path='/en' component={Eng} />
-            <Route path='/success' component={Thanks} />
-            <Route path='/' exact component={Lv} />
+            <Route path="/ru" component={Ru} />
+            <Route path="/en" component={Eng} />
+            <Route path="/success" component={Thanks} />
+            <Route path="/" exact component={Lv} />
           </Switch>
         </BrowserRouter>
       </div>

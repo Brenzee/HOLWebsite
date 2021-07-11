@@ -1,7 +1,9 @@
 .about {
+  max-width: 1200px;
+  width: 100%;
   display: grid;
   grid-template-columns: 60% auto;
-  margin: 0 3rem;
+  margin: 0 auto;
 }
 
 .hol_color {

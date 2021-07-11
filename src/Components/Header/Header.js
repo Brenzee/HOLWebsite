@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import '../White Wave/WhiteWave.css'
 import { Component } from 'react'
 import ScrollIntoView from 'react-scroll-into-view'
 import { Link } from 'react-router-dom'
@@ -10,6 +11,7 @@ import RussianFlag from '../../img/russian.png'
 import EnglishFlag from '../../img/english.png'
 import LatvianFlag from '../../img/latvian.png'
 import Logo from '../../img/logo.png'
+import Wave from '../../img/WhiteWave.png'
 import WhiteWave from '../White Wave/WhiteWave'
 
 class Header extends Component {
@@ -181,7 +183,23 @@ class Header extends Component {
                 </motion.div>
               )}
             </AnimatePresence>
-            <WhiteWave />
+            <AnimatePresence>
+              {this.state.isVisible && (
+                <motion.img
+                  src={Wave}
+                  className="white_wave"
+                  initial={{ scaleY: 1, y: 1 }}
+                  animate={{ scaleY: 1.05 }}
+                  transition={{
+                    ease: 'easeInOut',
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                    duration: 0.81,
+                  }}
+                ></motion.img>
+              )}
+            </AnimatePresence>
+            {/* <WhiteWave /> */}
           </div>
         </div>
       </>

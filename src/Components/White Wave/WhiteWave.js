@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 const WhiteWave = () => {
   return (
     <motion.div
+      className="white_wave"
       initial={{ scaleY: 1, y: 1 }}
       animate={{ scaleY: 1.15 }}
       transition={{
@@ -13,7 +14,6 @@ const WhiteWave = () => {
         repeatType: 'reverse',
         duration: 0.81,
       }}
-      className='white_wave'
     ></motion.div>
   )
 }

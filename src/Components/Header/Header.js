@@ -36,14 +36,14 @@ class Header extends Component {
   render() {
     return (
       <>
-        <div className="topline">
+        {/* <div className="topline">
           <p>{this.props.topLine}</p>
           <div>
             <a className="topline_link" href="#brunch">
               {this.props.brunch}
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="hero_back">
           <div className="background">
             <header className="header">
@@ -71,11 +71,11 @@ class Header extends Component {
                     <button onClick={this.onClick}>{this.props.about}</button>
                   </ScrollIntoView>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
+                {/* <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
                   <ScrollIntoView selector="#brunch">
                     <button onClick={this.onClick}>{this.props.brunch}</button>
                   </ScrollIntoView>
-                </motion.li>
+                </motion.li> */}
                 <motion.li whileHover={{ scale: 1.04 }} className="nav_item">
                   <ScrollIntoView selector="#keiterings">
                     <button onClick={this.onClick}>{this.props.banquet}</button>

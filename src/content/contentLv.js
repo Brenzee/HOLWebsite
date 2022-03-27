@@ -24,8 +24,8 @@ const contentLv = {
   brunch_list: [
     'Katru svētdienu, 12:00 – 15:00',
     'Katru nedēļu jauns piedāvājums',
-    '20 € no personas',
-    'Bērniem līdz 6 gadu vecumam par brīvu, no 7 gadiem - 10€',
+    '25 € no personas',
+    'Bērniem līdz 6 gadu vecumam par brīvu, no 7-12 gadiem - 12€',
     'Cenā iekļauta glāze Prosecco vai karstvīns, ūdens, morss, kafija un tēja',
   ],
   brunch_title2: 'Līdzņemšanas Brančs',

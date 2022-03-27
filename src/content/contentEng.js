@@ -24,8 +24,8 @@ const contentEng = {
   brunch_list: [
     'Every Saturday and Sunday, 12:00 - 15:00',
     'New offer every week',
-    '€ 20 per person',
-    'Free for children under 6 years, for children 7 years or older - 10 €',
+    '€ 25 per person',
+    'Free for children under 6 years, for children 7 years or older - 12 €',
     'The price includes a glass of Prosecco or mulled wine, water, morse, coffee and tea',
   ],
   brunch_title2: 'Take away Brunch',

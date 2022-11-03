@@ -22,7 +22,7 @@ const contentEng = {
   brunch_about:
     'Although we are not yet able to provide our usual Brunches, given the high demand for weekend late breakfasts, we have created a new concept - "Mini Brunches", which allows us to take care of your safety by making every Mini Branch table just for you!',
   brunch_list: [
-    'Every Saturday and Sunday, 12:00 - 15:00',
+    'Every Saturday and Sunday, 11:00 - 14:00',
     'New offer every week',
     '€ 25 per person',
     'Free for children under 6 years, for children 7 years or older - 12 €',
@@ -49,7 +49,8 @@ const contentEng = {
   reserve_comments: 'Comments',
   reserve_comments_placeholder: 'Need an infants chair etc.',
   working_hours: 'Working hours',
-  work_days: 'Mon. - Sun.',
+  work_days: 'Mon. - Fri.',
+  work_days1: 'Sat. - Sun.',
   rights:
     'SIA House of Light, All rights reserved. Restaurant House of Light Jurmala.',
 }

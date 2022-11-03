@@ -22,7 +22,7 @@ const contentLv = {
   brunch_about:
     'Lai arī mūsu ierastos Brančus vēl nodrošināt nevaram, ņemot vērā lielo pieprasījumu pēc brīvdienu vēlajām brokastīm, esam izveidojuši jaunu konceptu – “Mini Branči”, kas ļauj mums parūpēties par jūsu drošību, uzklājot Mini Branča galdu tieši Jums!',
   brunch_list: [
-    'Katru svētdienu, 12:00 – 15:00',
+    'Katru svētdienu, 11:00 – 14:00',
     'Katru nedēļu jauns piedāvājums',
     '25 € no personas',
     'Bērniem līdz 6 gadu vecumam par brīvu, no 7-12 gadiem - 12€',
@@ -49,7 +49,8 @@ const contentLv = {
   reserve_comments: 'Komentāri',
   reserve_comments_placeholder: 'Nepieciešams bērnu krēsliņš utt.',
   working_hours: 'Darba laiks',
-  work_days: 'P. - Sv.',
+  work_days: 'P. - Piek.',
+  work_days1: "S. - Sv.",
   rights:
     'SIA House of Light, Visas tiesības aizsargātas. Restorāns House of Light Jūrmala.',
 }

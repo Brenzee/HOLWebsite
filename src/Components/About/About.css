@@ -3,7 +3,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 60% auto;
-  margin: -4rem auto 0;
+  margin: -4rem auto 4rem;
 }
 
 .hol_color {

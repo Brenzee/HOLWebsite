@@ -1,7 +1,7 @@
 import React from 'react'
 import './Brunch.css'
 import ScrollIntoView from 'react-scroll-into-view'
-import BrunchImg from '../../img/Brunch.png'
+import BrunchImg from '../../img/Brunch2.jpg'
 import { motion } from 'framer-motion'
 
 const Brunch = ({ text }) => {
@@ -25,8 +25,8 @@ const Brunch = ({ text }) => {
                 </li>
               ))}
             </ul>
-            <h3 className="brunch_title2">{text.brunch_title2}</h3>
-            <p>{text.brunch_about2}</p>
+            {/* <h3 className="brunch_title2">{text.brunch_title2}</h3> */}
+            {/* <p>{text.brunch_about2}</p> */}
             {/* <ScrollIntoView selector="#reserve">
               <motion.button
                 className="brunch_button"

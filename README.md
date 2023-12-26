@@ -14,3 +14,4 @@ https://hol.lv/en
 5. React-scroll-into-view for scroll to the section
 6. React-snap for creating webpages in server hosting
 7. EmailsJS to send reservations to email.
+

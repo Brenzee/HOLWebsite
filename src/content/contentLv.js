@@ -24,8 +24,8 @@ const contentLv = {
   brunch_list: [
     'Katru svētdienu, 11:00 – 14:00',
     'Katru nedēļu jauns piedāvājums',
-    '25 € no personas',
-    'Bērniem līdz 6 gadu vecumam par brīvu, no 7-12 gadiem - 12€',
+    '28 € no personas',
+    'Bērniem līdz 5 gadu vecumam par brīvu, no 6-12 gadiem - 14€',
     'Cenā iekļauta glāze Prosecco vai karstvīns, ūdens, morss, kafija un tēja',
   ],
   brunch_title2: 'Līdzņemšanas Brančs',
@@ -50,7 +50,7 @@ const contentLv = {
   reserve_comments_placeholder: 'Nepieciešams bērnu krēsliņš utt.',
   working_hours: 'Darba laiks',
   work_days: 'P. - Piek.',
-  work_days1: "S. - Sv.",
+  work_days1: 'S. - Sv.',
   rights:
     'SIA House of Light, Visas tiesības aizsargātas. Restorāns House of Light Jūrmala.',
 }

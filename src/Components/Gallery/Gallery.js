@@ -17,6 +17,9 @@ import six from '../../img/img_gallery/6.jpeg'
 import seven from '../../img/img_gallery/7.jpeg'
 import eight from '../../img/img_gallery/8.jpeg'
 import nine from '../../img/img_gallery/9.jpeg'
+import img10 from "../../img/img_gallery/10.JPG"
+import img11 from "../../img/img_gallery/11.jpg"
+import img12 from "../../img/img_gallery/12.jpg"
 import Card from './Card'
 
 const breakpointColumnsObj = {
@@ -42,6 +45,9 @@ const Gallery = () => {
     seven,
     eight,
     nine,
+    img10,
+    img11,
+    img12
   ]
 
   const arrangeImg = images.map((img) => {

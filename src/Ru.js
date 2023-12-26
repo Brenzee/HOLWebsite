@@ -78,7 +78,7 @@ function Ru() {
         flag2={contentRu.flag2}
       />
       <SocialMedia />
-      <WhiteWave />
+      {/*<WhiteWave />*/}
       <Suspense fallback={" "}>
         <About text={contentRu} />
       </Suspense>

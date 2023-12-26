@@ -1,24 +1,24 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react'
 
 //All components
-import Header from "./Components/Header/Header";
-import SocialMedia from "./Components/SocialMedia/SocialMedia";
-import WhiteWave from "./Components/White Wave/WhiteWave";
-import About from "./Components/About/About";
-import Brunch from "./Components/Brunch/Brunch";
-import Keiterings from "./Components/Keiterings/Keiterings";
-import Reservation from "./Components/Reservation/Reservation";
-import Gallery from "./Components/Gallery/Gallery";
-import WhiteWaveBottom from "./Components/WhiteWaveBottom/WhiteWaveBottom";
-import Footer from "./Components/Footer/Footer";
-import contentEng from "./content/contentEng";
+import Header from './Components/Header/Header'
+import SocialMedia from './Components/SocialMedia/SocialMedia'
+import WhiteWave from './Components/White Wave/WhiteWave'
+import About from './Components/About/About'
+import Brunch from './Components/Brunch/Brunch'
+import Keiterings from './Components/Keiterings/Keiterings'
+import Reservation from './Components/Reservation/Reservation'
+import Gallery from './Components/Gallery/Gallery'
+import WhiteWaveBottom from './Components/WhiteWaveBottom/WhiteWaveBottom'
+import Footer from './Components/Footer/Footer'
+import contentEng from './content/contentEng'
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
 const Eng = () => {
   return (
     <div>
-      <Helmet htmlAttributes={{ lang: "en_LV" }}>
+      <Helmet htmlAttributes={{ lang: 'en_LV' }}>
         <link rel="canonical" href="https://hol.lv/eng"></link>
         {/* <!-- Primary Meta Tags --> */}
         <title>
@@ -83,29 +83,29 @@ const Eng = () => {
       />
 
       <SocialMedia />
-      <WhiteWave />
-      <Suspense fallback={" "}>
+      {/*<WhiteWave />*/}
+      <Suspense fallback={' '}>
         <About text={contentEng} />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Brunch text={contentEng} />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Keiterings text={contentEng} />
       </Suspense>
       {/* <Suspense fallback={' '}>
         <Reservation text={contentEng} />
       </Suspense> */}
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Gallery />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <WhiteWaveBottom />
       </Suspense>
-      <Suspense fallback={" "}>
+      <Suspense fallback={' '}>
         <Footer text={contentEng} />
       </Suspense>
     </div>
-  );
-};
-export default Eng;
+  )
+}
+export default Eng

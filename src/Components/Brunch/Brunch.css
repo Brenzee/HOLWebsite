@@ -44,7 +44,7 @@
 .brunch_container {
   display: flex;
   padding-top: 2rem;
-  max-height: 610px;
+  /* max-height: 610px; */
 }
 
 .brunch_about {
@@ -52,7 +52,6 @@
   flex: 4;
   margin-right: 2rem;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   border-radius: 25px;
   background: white;
@@ -61,6 +60,7 @@
 
 .brunch_about > p {
   line-height: 28px;
+  margin-bottom: 2rem;
 }
 
 .brunch_img {
@@ -148,7 +148,7 @@
 
   .brunch_about > p {
     line-height: 24px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .brunch_img {
